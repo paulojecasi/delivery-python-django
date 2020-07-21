@@ -187,10 +187,10 @@ div#logo_cabecalho2 img#icone2{
 
 .corDeFundoPreco{
     background-color: rgba(255,255,255);         /** cor de fundo **/
-    height: 180px ;                    /** altura do bloco **/
+    height: 185px ;                    /** altura do bloco **/
     width: 280px;                      /** largura **/
     border: 2px outset #DCDCDC;        /** borda e cor da borda **/
-    border-radius: 0px 0px 15px 15px;  /** arredondamento da borda **/
+    border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
 
 }
 
@@ -208,7 +208,7 @@ div#logo_cabecalho2 img#icone2{
 }
 
 #pedBebidas ul li#fonte3{
-    line-height:18px;                          /** espaço entre as linhas **/
+    line-height:27px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 }
 
@@ -388,10 +388,10 @@ div#logo_cabecalho2 img#icone2{
 
     .corDeFundoPreco{
         background-color: rgba(255,255,255);         /** cor de fundo **/
-        height: 170px ;                    /** altura do bloco **/
+        height: 175px ;                    /** altura do bloco **/
         width: 210px;                      /** largura **/
         border: 2px outset #DCDCDC;        /** borda e cor da borda **/
-        border-radius: 0px 0px 15px 15px;  /** arredondamento da borda **/
+        border-radius: 0px 0px 3px 3px;  /** arredondamento da borda **/
         font-size: 15px;                          /** tamanho da fonte **/
 
     }
@@ -404,14 +404,14 @@ div#logo_cabecalho2 img#icone2{
     }
 
     #pedBebidas ul li#fonte2{
-        line-height:5px;                          /** espaço entre as linhas **/
+        line-height:6px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 
 
     }
 
     #pedBebidas ul li#fonte3{
-        line-height:18px;                          /** espaço entre as linhas **/
+        line-height:25px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
     }
 
