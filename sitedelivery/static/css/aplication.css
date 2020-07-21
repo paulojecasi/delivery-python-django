@@ -1,0 +1,487 @@
+body {
+   /** width: 60%; **/
+    margin: 0px; 
+    /**background: url(img/cvj7.jpg) center; **/
+    font-family: sans-serif;
+    background-color: #F5F5F5; 
+}
+
+
+header#cabecalho{
+
+    /**background-color: rgba(255,255,255);           /** cor de fundo **/
+    background-color:#DAA520;                     /** cor de fundo **/
+    height: 55px;
+    min-height: 110px;
+
+   
+}
+
+
+/** TITULO  ---------------------------------------- **/
+header#cabecalho h1{
+    font-family: Impact, fantasy;
+    font-size: 50px;
+    color: rgba(255,255,255);
+    position: absolute;
+    left:230px;
+    top:10px;
+
+
+    text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+    margin-top: 0px                    /** margem de cima **/
+    /** margin-bottom: 0px             /** margem de baixo **/
+}
+
+/** sub titulos------------------------------------- **/
+header#cabecalho h3{
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: rgba(255,255,255);
+    text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+    position: absolute;
+
+}
+
+
+header#cabecalho h3#sub1{                     /** posicao sub titulo 1 **/
+    left:230px;
+    top:73px;
+}
+
+header#cabecalho h3#sub2{                    /** posicao sub titulo 2 **/
+
+}
+
+
+
+
+/** LOGOMARCA **/
+
+div#logo_cabecalho img#icone{
+    height: 50px;
+    min-height: 110px;
+    border: 10px solid #DAA520;            /** borda e cor da borda **/
+    width: 175px;                       /** largura **/
+
+}
+
+/** LOGOMARCA2-celular **/
+
+div#logo_cabecalho2 img#icone2{
+    height: 60px;
+    min-height: 75px;
+    border: 10px solid #DAA520;            /** borda e cor da borda **/
+    width: 90px;                       /** largura **/
+
+
+}
+
+
+.menu{
+    background-color:  #B8860B;
+    height: 40px;
+    font-family: 'Arial';
+    font-size: 17px;
+    font-weight: bold;                     /** fonte em negrito **/
+
+
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+
+}
+
+.menu ul li{
+    width: 130px;
+    float: left;
+
+}
+
+.menu a{
+    padding: 6px;
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    background-color: #B8860B; 
+    color: #fff;
+}
+
+.menu a:hover{    
+    color:#DAA520 ;
+    background-color: white; 
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
+}
+
+
+
+.carrinho-menu{
+    background-color: #2F4F4F;
+    height: 40px;                    /** fonte em negrito **/
+    color: #fff;
+    padding: 8px;
+
+
+}
+
+.carrinho-menu h4{
+
+    font-size: 18px;
+    font-weight: bold;                     /** fonte em negrito **/
+    color: #fff;
+
+}
+
+.carrinho-menu input{
+
+ 
+    font-weight: bold;                     /** fonte em negrito **/
+    color: #fff;
+    width:210px;
+    height:30px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+}
+
+
+.tela-itens{
+    background-color:  #FFFFE0;
+    padding: 160px;
+
+}
+
+.tela-itens h4{
+    padding: 5px;
+    font-size: 27px;
+    font-weight: bold;                     /** fonte em negrito **/
+    color: black;
+    text-align: center;
+
+}
+
+#cor-de-fundo-imagem{
+    height: 190px ;                    /** altura do bloco **/
+    width: 280px;                       /** largura **/
+    border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
+    text-align: center;
+    background-color: rgba(255,255,255);
+
+
+}
+
+.imagemProduto{
+
+    height: 185px ;                    /** altura do bloco **/
+    width: 180px;                       /** largura **/
+    
+}
+
+.corDeFundoPreco{
+    background-color: rgba(255,255,255);         /** cor de fundo **/
+    height: 180px ;                    /** altura do bloco **/
+    width: 280px;                      /** largura **/
+    border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 0px 0px 15px 15px;  /** arredondamento da borda **/
+
+}
+
+#pedBebidas ul li#fonte1{
+    font-size: 21px;                          /** tamanho da fonte **/
+    /** font-weight: bold;                        /** fonte em negrito **/
+    color: #000;                              /** cor da fonte **/
+    text-align: center;
+}
+
+#pedBebidas ul li#fonte2{
+    line-height:2px;                          /** espaço entre as linhas **/
+    padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+
+}
+
+#pedBebidas ul li#fonte3{
+    line-height:18px;                          /** espaço entre as linhas **/
+    padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+}
+
+#pedBebidas ul li#fonte4{
+    font-size: 25px;                          /** tamanho da fonte **/
+    /**font-weight: bold;                        /** fonte em negrito **/
+    color: #000;                              /** cor da fonte **/
+    line-height:30px;                          /** espaço entre as linhas **/
+    padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+}
+
+.ladoALado{
+    float: left;
+    padding: 20px 0px 0px 20px;   /*  acima    50px  padding  */
+                                /*  direita  0px  padding  */
+                                /*  abaixo   00px padding  */
+                                /*  esquerda 30px  padding  */
+}
+
+
+#botoesTot{
+
+    font: bold 20px/24px arial, helvetica, sans-aerif;
+    padding:6px;
+    text-decoration: none;
+    text-align:center;
+    color: black;
+    display:inline-block;
+    margin-left: 0px;
+
+
+}
+
+#botoesTot button{
+
+    font: bold 20px/24px arial, helvetica, sans-aerif;
+    display:inline-block;
+    margin-left: 10px;
+
+}
+
+
+
+#inputTotais{
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+
+}
+
+#campoQtdBoot{
+
+    width:250px;
+    height:20px;
+    margin-left: 0px;
+
+
+}
+#campoTotalBoot{
+
+    width:240px;
+    height:20px;
+    margin-left: 6px;
+
+
+}
+
+
+
+/**========================== MEDIA SCREEN ==============================**/ 
+
+
+
+@media screen and (max-width: 576px) {
+
+    header#cabecalho{
+
+    /**background-color: rgba(255,255,255);           /** cor de fundo **/
+    background-color: #DAA520;                     /** cor de fundo **/
+    height: 60px;
+    min-height: 80px; 
+    border-radius: 10px 10px 0px 0px;  /** arredondamento da borda **/
+   
+    }
+
+    header#cabecalho h1 {
+        left:130px;
+        top:10px;
+        font-size: 25px;
+
+    }
+
+    header#cabecalho h3#sub1 {
+        left:130px;
+        top:43px;
+        font-size: 13px;
+    }
+
+
+
+    .menu{
+        height: 35px;
+        border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
+        font-size: 15px;
+ 
+    }
+
+
+    .menu ul li{
+        width: 80px;
+
+    }
+
+    .menu a{
+        padding: 7px;
+        text-align: left;
+ 
+    }
+
+    .carrinho-menu{
+
+        border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
+        height: 34px;                    /** fonte em negrito **/
+        padding: 6px;
+
+    }
+
+    .carrinho-menu h4{
+
+        font-size: 15px;
+
+    }
+
+    .carrinho-menu input{
+
+        font-weight: bold;                     /** fonte em negrito **/
+        color: #fff;
+        width:140px;
+        height:27px;s
+        position: absolute;
+        right: 10px;
+        top: 4px;
+
+    }
+
+    .tela-itens{
+        padding: 145px;
+
+    }
+
+    .tela-itens h4{
+        padding: 10px;
+        font-size: 15px;
+        font-weight: bold;                     /** fonte em negrito **/
+        color: black;
+        text-align: center;
+
+    }
+
+
+    #cor-de-fundo-imagem{
+        height: 130px ;                    /** altura do bloco **/
+        width: 210px;                       /** largura **/
+        border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+        border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
+        text-align: center;
+
+
+    }
+
+    .imagemProduto{
+
+        height: 125px ;                    /** altura do bloco **/
+        width: 135px;                       /** largura **/
+    
+    }
+
+    .corDeFundoPreco{
+        background-color: rgba(255,255,255);         /** cor de fundo **/
+        height: 170px ;                    /** altura do bloco **/
+        width: 210px;                      /** largura **/
+        border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+        border-radius: 0px 0px 15px 15px;  /** arredondamento da borda **/
+        font-size: 15px;                          /** tamanho da fonte **/
+
+    }
+
+    #pedBebidas ul li#fonte1{
+        font-size: 16px;                          /** tamanho da fonte **/
+        font-weight: bold;                        /** fonte em negrito **/
+        color: #000;                              /** cor da fonte **/
+        text-align: center;
+    }
+
+    #pedBebidas ul li#fonte2{
+        line-height:5px;                          /** espaço entre as linhas **/
+        padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+
+
+    }
+
+    #pedBebidas ul li#fonte3{
+        line-height:18px;                          /** espaço entre as linhas **/
+        padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+    }
+
+    #pedBebidas ul li#fonte4{
+        font-size: 20px;                          /** tamanho da fonte **/
+        /**font-weight: bold;                        /** fonte em negrito **/
+        color: #000;                              /** cor da fonte **/
+        line-height:30px;                          /** espaço entre as linhas **/
+        padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+    }
+
+    .ladoALado{
+        float: left;
+        padding: 10px 0px 0px 10px;   /*  acima    50px  padding  */
+                                /*  direita  0px  padding  */
+                                /*  abaixo   00px padding  */
+                                /*  esquerda 30px  padding  */
+    }
+
+ 
+
+    #botoesTot{
+
+        font: bold 20px/24px arial, helvetica, sans-aerif;
+        padding:6px;
+        text-decoration: none;
+        text-align:center;
+        color: black;
+        display:inline-block;
+        margin-left: -5px;
+
+
+    }
+
+    #botoesTot button{
+
+        font: bold 20px/24px arial, helvetica, sans-aerif;
+        display:inline-block;
+        margin-left: 2px;
+
+    }
+
+
+
+    #inputTotais{
+        position: relative;
+        bottom: 5px;
+        left: 1px;
+
+    }
+
+    #campoQtdBoot{
+
+        width:200px;
+        height:17px;
+        margin-left: 0px;
+
+
+    }
+    #campoTotalBoot{
+
+        width:200px;
+        height:17px;
+        margin-left: 1px;
+
+
+    }
+
+
+    
+
+}
+
