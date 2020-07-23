@@ -208,9 +208,9 @@ div#logo_cabecalho2 img#icone2{
 }
 
 #cor-de-fundo-imagem{
-    height: 190px ;                    /** altura do bloco **/
+    height: 160px ;                    /** altura do bloco **/
     width: 280px;                       /** largura **/
-    border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+    border: 1px outset #DCDCDC;        /** borda e cor da borda **/
     border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
     text-align: center;
     background-color: rgba(255,255,255);
@@ -220,8 +220,8 @@ div#logo_cabecalho2 img#icone2{
 
 .imagemProduto{
 
-    height: 185px ;                    /** altura do bloco **/
-    width: 180px;                       /** largura **/
+    height: 155px ;                    /** altura do bloco **/
+    width: 160px;                       /** largura **/
     
 }
 
@@ -229,7 +229,7 @@ div#logo_cabecalho2 img#icone2{
     background-color: rgba(255,255,255);         /** cor de fundo **/
     height: 185px ;                    /** altura do bloco **/
     width: 280px;                      /** largura **/
-    border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+    border: 1px outset #DCDCDC;        /** borda e cor da borda **/
     border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
 
 }
@@ -340,8 +340,8 @@ div#logo_cabecalho2 img#icone2{
 
 #botoesTot{
 
-    font: bold 20px/24px arial, helvetica, sans-aerif;
-    padding:6px;
+    font: bold 19px/24px arial, helvetica, sans-aerif;
+    padding:1px;
     text-decoration: none;
     text-align:center;
     color: black;
@@ -356,6 +356,7 @@ div#logo_cabecalho2 img#icone2{
     font: bold 20px/24px arial, helvetica, sans-aerif;
     display:inline-block;
     margin-left: 10px;
+    height:31px;
 
 }
 
@@ -368,22 +369,44 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
+#inputTotais span{
+    font-size: 14px;
+    width:50px;
+    height:27px;
+  
+}
+
+#inputTotais input{
+    height:27px;
+}
+
 #campoQtdBoot{
 
-    width:250px;
+    width:230px;
     height:20px;
     margin-left: 0px;
-
+    height:30px;
+    top: 10px;
 
 }
+
 #campoTotalBoot{
 
-    width:240px;
+    width:230px;
     height:20px;
-    margin-left: 6px;
+    margin-left: 2px;
+}
 
+#campoTotalBoot span{
+    font-size: 14px;
+    width:70px;
+    height:27px;
 
 }
+
+
+
+
 
 
 
@@ -483,27 +506,28 @@ div#logo_cabecalho2 img#icone2{
 
 
     #cor-de-fundo-imagem{
-        height: 190px ;                    /** altura do bloco **/
-        width: 210px;                       /** largura **/
-        border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+        height: 185px ;                    /** altura do bloco **/
+        width: 170px;                       /** largura **/
+        border: 1px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
         text-align: center;
+
 
 
     }
 
     .imagemProduto{
 
-        height: 125px ;                    /** altura do bloco **/
-        width: 135px;                       /** largura **/
+        height: 173px ;                    /** altura do bloco **/
+        width: 166px;                       /** largura **/
     
     }
 
     .corDeFundoPreco{
         background-color: rgba(255,255,255);         /** cor de fundo **/
         height: 175px ;                    /** altura do bloco **/
-        width: 210px;                      /** largura **/
-        border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+        width: 170px;                      /** largura **/
+        border: 1px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 0px 0px 3px 3px;  /** arredondamento da borda **/
         font-size: 15px;                          /** tamanho da fonte **/
 
@@ -566,7 +590,7 @@ div#logo_cabecalho2 img#icone2{
 
     .imagemProdutoCatalogo{
 
-        height: 180px ;                    /** altura do bloco **/
+        height: 176px ;                    /** altura do bloco **/
         width: 166px;                       /** largura **/
         
     }
@@ -616,7 +640,7 @@ div#logo_cabecalho2 img#icone2{
                                 /*  esquerda 30px  padding  */
     }
 
- 
+
 
     #botoesTot{
 
@@ -644,23 +668,36 @@ div#logo_cabecalho2 img#icone2{
     #inputTotais{
         position: relative;
         bottom: 5px;
-        left: 1px;
+        left: 2px;
 
     }
 
     #campoQtdBoot{
 
-        width:200px;
-        height:17px;
+        width:160px;
         margin-left: 0px;
 
-
     }
+
+    #campoQtdBoot2{
+
+        width:160px;
+        height:20px;
+        margin-left: 0px;
+        height:30px;
+        top: 10px;
+    }
+
+     #campoQtdBoot2 input{
+        margin-left: 3px;
+     }
+
+
     #campoTotalBoot{
 
-        width:200px;
-        height:17px;
+        width:160px;
         margin-left: 1px;
+
 
 
     }
