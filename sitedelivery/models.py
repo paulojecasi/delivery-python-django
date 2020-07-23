@@ -137,13 +137,32 @@ class Produto(models.Model):
         ('BUDWEISER', 'BUDWEISER'),
         ('CARACU', 'CARACU'),
         ('BADER','BADER'),
-        ('TERESOPOLIS','TERESOPOLIS')
+        ('TERESOPOLIS','TERESOPOLIS'),
+        ('REFRI COCACOLA', 'REFRI COCA COLA'),
+        ('GUARANA ANTARCTICA','GUARANA ANTARCTICA'),
+        ('GUARANA SCHIN','GUARANA SCHIN'),
+        ('GUARANA FANTA', 'GUARANA FANTA'),
+        ('REFRI FANTA LARANJA','REFRI FANTA LARANJA'),
+        ('REFRI FANTA UVA', 'REFRI FANTA UVA')
+
+
+
+
 
     )
     ordena_choices = sorted(BEBIDAS_CHOICES, key=lambda x: x[1])
     BEBIDAS_CHOICES = ordena_choices
 
     TAMANHO_CHOICES = (
+        ('PET 2 LTS','PET 2 LTS'),
+        ('PET 1 LTS', 'PET 1 LTS'),
+        ('PET 1.5 LTS', 'PET 1.5 LTS'),
+        ('PET 2 LITROS', 'PET 2 LTS'),
+        ('KS RETORNAVEL', 'KS RETORNAVEL'),
+        ('PET 2 LTS RETORNAVEL', 'PET 2 LTS RETORNAVEL'),
+        ('PET 1 LTS RETORNAVEL', 'PET 1 LTS RETORNAVEL'),
+        ('PET 1.5 LTS RETORNAVEL', 'PET 1.5 LTS RETORNAVEL'),
+        ('PET 2 LITROS RETORNAVEL', 'PET 2  LTS RETORNAVEL'),
         ('LONG NECK 250 ML', 'LONG NECK 250 ML'),
         ('LONG NECK 275 ML', 'LONG NECK 275 ML'),
         ('LONG NECK 330 ML', 'LONG NECK 330 ML'),

@@ -46,3 +46,15 @@ def Catalogo(request):
     }
 
     return render(request,'catalogo.html',dados)
+
+def Administracao(request):
+
+    ola = "OLA"
+
+    dados = {
+        'Ola': ola
+
+    }
+
+    return render(request, 'administracao.html', dados)
+
