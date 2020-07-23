@@ -609,16 +609,17 @@ div#logo_cabecalho2 img#icone2{
         /** font-weight: bold;                        /** fonte em negrito **/
         color: #000;                              /** cor da fonte **/
         text-align: center;
+        line-height:15px;                          /** espaço entre as linhas **/
     }
 
     #catalogo ul li#fonte2{
-        line-height:2px;                          /** espaço entre as linhas **/
+        line-height:17px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 
     }
 
     #catalogo ul li#fonte3{
-        line-height:27px;                          /** espaço entre as linhas **/
+        line-height:17px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
     }
 
