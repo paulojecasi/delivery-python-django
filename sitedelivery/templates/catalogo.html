@@ -6,15 +6,15 @@
 
       <div class="row">
           <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
-        <div class = "tela-itens col-md-12 col-xs-12">
-          <h4> Nossos produtos de hoje </h4>
+        <div class = "tela-itens-catalogo col-md-12 col-xs-12">
+          <h4> Nossos produtos disponiveis </h4>
 
             <div id="catalogo">
               {% for PRODUTOS_DO_SITE in ProdutosDoSite %}
 
                 <ul style="list-style-type: none;" class="ladoALado">
                   <li>
-                    <div id="cor-de-fundo-imagem">
+                    <div id="cor-de-fundo-imagem-catalogo">
                       {% if PRODUTOS_DO_SITE.foto %}
                         <img class = "imagemProdutoCatalogo"
                           src =" {{PRODUTOS_DO_SITE.foto.url}} " />

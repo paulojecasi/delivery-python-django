@@ -261,7 +261,30 @@ div#logo_cabecalho2 img#icone2{
 }
 
 
+.tela-itens-catalogo{
+    background-color:  #FFFFE0;
+    padding: 160px;
 
+}
+
+.tela-itens-catalogo h4{
+    padding: 5px;
+    font-size: 27px;
+    font-weight: bold;                     /** fonte em negrito **/
+    color: black;
+    text-align: center;
+
+}
+
+#cor-de-fundo-imagem-catalogo{
+    height: 190px ;                    /** altura do bloco **/
+    width: 280px;                       /** largura **/
+    border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
+    text-align: center;
+    background-color: rgba(255,255,255);
+
+}
 
 
 .imagemProdutoCatalogo{
@@ -447,6 +470,8 @@ div#logo_cabecalho2 img#icone2{
 
     }
 
+    
+
     .tela-itens h4{
         padding: 10px;
         font-size: 15px;
@@ -513,17 +538,43 @@ div#logo_cabecalho2 img#icone2{
 
 
 
+    .tela-itens-catalogo{
+        background-color:  #FFFFE0;
+        padding: 120px;
+
+    }
+
+    .tela-itens-catalogo h4{
+        padding: 2px;
+        font-size: 15px;
+        font-weight: bold;                     /** fonte em negrito **/
+        color: black;
+        text-align: center;
+
+    }
+
+    #cor-de-fundo-imagem-catalogo{
+        height: 190px ;                    /** altura do bloco **/
+        width: 178px;                       /** largura **/
+        border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+        border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
+        text-align: center;
+
+
+    }
+
+
     .imagemProdutoCatalogo{
 
         height: 185px ;                    /** altura do bloco **/
-        width: 180px;                       /** largura **/
+        width: 175px;                       /** largura **/
         
     }
 
     .corDeFundoPrecoCatalogo{
         background-color: rgba(255,255,255);         /** cor de fundo **/
-        height: 120px ;                    /** altura do bloco **/
-        width: 210px;                      /** largura **/
+        height: 105px ;                    /** altura do bloco **/
+        width: 178px;                      /** largura **/
         border: 2px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
 
