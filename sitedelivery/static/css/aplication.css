@@ -294,7 +294,7 @@ div#logo_cabecalho2 img#icone2{
     background-color: #DAA520;                     /** cor de fundo **/
     height: 60px;
     min-height: 80px; 
-    border-radius: 10px 10px 0px 0px;  /** arredondamento da borda **/
+    border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
    
     }
 
@@ -330,13 +330,13 @@ div#logo_cabecalho2 img#icone2{
     .menu a{
         padding: 7px;
         text-align: center;
-        border-radius: 0px 0px 10px 10px; 
+        border-radius: 0px 0px 0px 0px; 
  
     }
 
     .carrinho-menu{
 
-        border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
+        border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
         height: 34px;                    /** fonte em negrito **/
         padding: 6px;
 
