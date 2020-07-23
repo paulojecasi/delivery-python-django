@@ -554,8 +554,8 @@ div#logo_cabecalho2 img#icone2{
     }
 
     #cor-de-fundo-imagem-catalogo{
-        height: 190px ;                    /** altura do bloco **/
-        width: 173px;                       /** largura **/
+        height: 185px ;                    /** altura do bloco **/
+        width: 170px;                       /** largura **/
         border: 2px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
         text-align: center;
@@ -566,15 +566,15 @@ div#logo_cabecalho2 img#icone2{
 
     .imagemProdutoCatalogo{
 
-        height: 185px ;                    /** altura do bloco **/
-        width: 170px;                       /** largura **/
+        height: 180px ;                    /** altura do bloco **/
+        width: 166px;                       /** largura **/
         
     }
 
     .corDeFundoPrecoCatalogo{
         background-color: rgba(255,255,255);         /** cor de fundo **/
         height: 105px ;                    /** altura do bloco **/
-        width: 173px;                      /** largura **/
+        width: 170px;                      /** largura **/
         border: 2px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
 
