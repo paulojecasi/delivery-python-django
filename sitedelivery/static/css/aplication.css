@@ -86,6 +86,7 @@ div#logo_cabecalho2 img#icone2{
     font-weight: bold;                     /** fonte em negrito **/
 
 
+
 }
 
 .menu ul {
@@ -105,7 +106,6 @@ div#logo_cabecalho2 img#icone2{
     padding: 6px;
     display: block;
     text-decoration: none;
-    list-style: none;
     text-align: center;
     background-color: #B8860B; 
     color: #fff;
@@ -114,6 +114,8 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
+
+
 .menu a:hover{    
     color:#DAA520 ;
     background-color: white; 
@@ -121,6 +123,40 @@ div#logo_cabecalho2 img#icone2{
     list-style: none;
     border: 1px solid #DCDCDC;        /** borda e cor da borda **/
     border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
+    
+}
+
+.menu ul ul li{
+    width: 180px;
+    float: left;
+
+}
+
+.menu ul ul a{
+    color:#DAA520 ;
+    background-color: white; 
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
+
+
+
+}
+
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+    padding: 2px;
+
+
+}
+
+
+.menu ul li:hover ul{  
+    visibility: visible;
+    background-color: white; 
+
 }
 
 
@@ -217,6 +253,52 @@ div#logo_cabecalho2 img#icone2{
 }
 
 #pedBebidas ul li#fonte4{
+    font-size: 25px;                          /** tamanho da fonte **/
+    /**font-weight: bold;                        /** fonte em negrito **/
+    color: #000;                              /** cor da fonte **/
+    line-height:30px;                          /** espaço entre as linhas **/
+    padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+}
+
+
+
+
+
+.imagemProdutoCatalogo{
+
+    height: 185px ;                    /** altura do bloco **/
+    width: 180px;                       /** largura **/
+    
+}
+
+.corDeFundoPrecoCatalogo{
+    background-color: rgba(255,255,255);         /** cor de fundo **/
+    height: 120px ;                    /** altura do bloco **/
+    width: 280px;                      /** largura **/
+    border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
+
+}
+
+#catalogo ul li#fonte1{
+    font-size: 21px;                          /** tamanho da fonte **/
+    /** font-weight: bold;                        /** fonte em negrito **/
+    color: #000;                              /** cor da fonte **/
+    text-align: center;
+}
+
+#catalogo ul li#fonte2{
+    line-height:2px;                          /** espaço entre as linhas **/
+    padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+
+}
+
+#catalogo ul li#fonte3{
+    line-height:27px;                          /** espaço entre as linhas **/
+    padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+}
+
+#catalogo ul li#fonte4{
     font-size: 25px;                          /** tamanho da fonte **/
     /**font-weight: bold;                        /** fonte em negrito **/
     color: #000;                              /** cor da fonte **/
@@ -376,7 +458,7 @@ div#logo_cabecalho2 img#icone2{
 
 
     #cor-de-fundo-imagem{
-        height: 130px ;                    /** altura do bloco **/
+        height: 190px ;                    /** altura do bloco **/
         width: 210px;                       /** largura **/
         border: 2px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
@@ -428,6 +510,52 @@ div#logo_cabecalho2 img#icone2{
         line-height:30px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
     }
+
+
+
+    .imagemProdutoCatalogo{
+
+        height: 185px ;                    /** altura do bloco **/
+        width: 180px;                       /** largura **/
+        
+    }
+
+    .corDeFundoPrecoCatalogo{
+        background-color: rgba(255,255,255);         /** cor de fundo **/
+        height: 120px ;                    /** altura do bloco **/
+        width: 210px;                      /** largura **/
+        border: 2px outset #DCDCDC;        /** borda e cor da borda **/
+        border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
+
+    }
+
+    #catalogo ul li#fonte1{
+        font-size: 21px;                          /** tamanho da fonte **/
+        /** font-weight: bold;                        /** fonte em negrito **/
+        color: #000;                              /** cor da fonte **/
+        text-align: center;
+    }
+
+    #catalogo ul li#fonte2{
+        line-height:2px;                          /** espaço entre as linhas **/
+        padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+
+    }
+
+    #catalogo ul li#fonte3{
+        line-height:27px;                          /** espaço entre as linhas **/
+        padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+    }
+
+    #catalogo ul li#fonte4{
+        font-size: 25px;                          /** tamanho da fonte **/
+        /**font-weight: bold;                        /** fonte em negrito **/
+        color: #000;                              /** cor da fonte **/
+        line-height:30px;                          /** espaço entre as linhas **/
+        padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+    }
+
+
 
     .ladoALado{
         float: left;

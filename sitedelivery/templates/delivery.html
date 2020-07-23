@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% block main %}
+
+{% load static %}
+
+
+      <div class="row">
+          <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
+        <div class = "tela-itens col-md-12 col-xs-12">
+          <h4> Faça seu pedido, Boas compras! </h4>
+
+            <div id="pedBebidas">
+              {% for PRODUTOS_DO_SITE in ProdutosDoSite %}
+
+                <ul style="list-style-type: none;" class="ladoALado">
+                  <li>
+                    <div id="cor-de-fundo-imagem">
+                      {% if PRODUTOS_DO_SITE.foto %}
+                        <img class = "imagemProduto"
+                          src =" {{PRODUTOS_DO_SITE.foto.url}} " />
+                      {% else %}
+                        <img class = "imagemProduto"
+                          src =" {{PRODUTOS_DO_SITE.url_imagem}} ">
+
+                      {% endif %}
+
+                    </div>
+                  </li>
+                  <div class = "corDeFundoPreco">
+                    <li id="fonte1"> {{PRODUTOS_DO_SITE.bebida}}      </li>
+                    <li id="fonte2"> {{PRODUTOS_DO_SITE.complemento}} </li>
+                    <li id="fonte3"> {{PRODUTOS_DO_SITE.tamanho}}     </li>
+                    <li id="fonte4"> R$  {{PRODUTOS_DO_SITE.valor}}
+                      <!--
+                      <a  class="botaoMaisUm"
+                        href =" "
+                        title="Colocar no carrinho!"> + 1 </a>
+                      <a  class="botaoMenosUm"
+                        href =" "
+                        title="Colocar no carrinho!"> - 1 </a>
+                        -->
+
+
+                    </li>
+
+                    <!-- <h4 id="vl-total"> Totais</h4> -->
+
+                    <div id =inputTotais>
+
+                      <!--
+                      <div id="botoesTot">
+                        <label> Qtd </label>
+                        <button type="button" class="btn btn-outline-success">+1</button>
+                        <input id="campoQuantidade"
+                              class="quantidadeItens"
+                              name="quantidade"
+                              type="number"
+                              value="1"
+                        >
+
+                        <button type="button" class="btn btn-outline-warning">-1</button>
+                      </div>
+                      -->
+
+                      <div id="botoesTot">
+                        <div class="input-group mb-3" id="campoQtdBoot">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" >Qt</span>
+                          </div>
+                          <input type="text" class="form-control" aria-label="Quantia">
+                         <button type="button" class="btn btn-outline-success">+1</button>
+                          <button type="button" class="btn btn-outline-warning">-1</button>
+                        </div>
+                      </div>
+
+
+                      <div class="input-group mb-3" id="campoTotalBoot">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="col-form-label-sm">Total R$</span>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Quantia">
+
+                      </div>
+
+
+
+                    </div>
+
+
+                </ul>
+
+
+
+
+              {% endfor %}
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+{% endblock %}

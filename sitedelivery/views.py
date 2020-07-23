@@ -14,16 +14,35 @@ from .models import (
     Bairro
 )
 
-def Produtos(request):
+def Delivery(request):
 
 
     produtosDoSite = Produto.objects.filter(site="SIM")
     bairroEntrega = Bairro.objects.filter(cobertura="S")
+    tipo = "delivery"
+
 
     dados = {
         'ProdutosDoSite': produtosDoSite,
         'BairroEntrega': bairroEntrega,
+        'Tipo': tipo
 
     }
 
-    return render(request,'index.html',dados)
+    return render(request,'delivery.html',dados)
+
+def Catalogo(request):
+
+
+    produtosDoSite = Produto.objects.filter(site="SIM")
+    bairroEntrega = Bairro.objects.filter(cobertura="S")
+    tipo = "catalogo"
+
+    dados = {
+        'ProdutosDoSite': produtosDoSite,
+        'BairroEntrega': bairroEntrega,
+        'Tipo': tipo
+
+    }
+
+    return render(request,'catalogo.html',dados)

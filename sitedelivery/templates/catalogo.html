@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block main %}
+
+{% load static %}
+
+
+      <div class="row">
+          <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
+        <div class = "tela-itens col-md-12 col-xs-12">
+          <h4> Nossos produtos de hoje </h4>
+
+            <div id="catalogo">
+              {% for PRODUTOS_DO_SITE in ProdutosDoSite %}
+
+                <ul style="list-style-type: none;" class="ladoALado">
+                  <li>
+                    <div id="cor-de-fundo-imagem">
+                      {% if PRODUTOS_DO_SITE.foto %}
+                        <img class = "imagemProdutoCatalogo"
+                          src =" {{PRODUTOS_DO_SITE.foto.url}} " />
+                      {% else %}
+                        <img class = "imagemProdutoCatalogo"
+                          src =" {{PRODUTOS_DO_SITE.url_imagem}} ">
+
+                      {% endif %}
+
+                    </div>
+                  </li>
+                  <div class = "corDeFundoPrecoCatalogo">
+                    <li id="fonte1"> {{PRODUTOS_DO_SITE.bebida}}      </li>
+                    <li id="fonte2"> {{PRODUTOS_DO_SITE.complemento}} </li>
+                    <li id="fonte3"> {{PRODUTOS_DO_SITE.tamanho}}     </li>
+                    <li id="fonte4"> R$  {{PRODUTOS_DO_SITE.valor}}
+                      <!--
+                      <a  class="botaoMaisUm"
+                        href =" "
+                        title="Colocar no carrinho!"> + 1 </a>
+                      <a  class="botaoMenosUm"
+                        href =" "
+                        title="Colocar no carrinho!"> - 1 </a>
+                        -->
+
+
+                    </li>
+
+
+                </ul>
+
+
+
+
+              {% endfor %}
+            </div>
+
+        </div>
+
+      </div>
+
+    </div>
+{% endblock %}
