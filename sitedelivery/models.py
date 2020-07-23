@@ -154,6 +154,7 @@ class Produto(models.Model):
     BEBIDAS_CHOICES = ordena_choices
 
     TAMANHO_CHOICES = (
+        ('GARRAFA 1 LT RETORNAVEL', 'GARRAFA 1 LT RETORNAVEL'),
         ('PET 2 LTS','PET 2 LTS'),
         ('PET 1 LTS', 'PET 1 LTS'),
         ('PET 1.5 LTS', 'PET 1.5 LTS'),
