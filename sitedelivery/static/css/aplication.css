@@ -92,10 +92,11 @@ div#logo_cabecalho2 img#icone2{
     list-style: none;
     position: relative;
 
+
 }
 
 .menu ul li{
-    width: 130px;
+    width: 120px;
     float: left;
 
 }
@@ -108,6 +109,9 @@ div#logo_cabecalho2 img#icone2{
     text-align: center;
     background-color: #B8860B; 
     color: #fff;
+    border-right:2px solid #DAA520;
+    border-left:2px solid #DAA520;
+
 }
 
 .menu a:hover{    
@@ -282,7 +286,7 @@ div#logo_cabecalho2 img#icone2{
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 750px) {
 
     header#cabecalho{
 
@@ -318,7 +322,7 @@ div#logo_cabecalho2 img#icone2{
 
 
     .menu ul li{
-        width: 80px;
+        width: 100px;
 
     }
 

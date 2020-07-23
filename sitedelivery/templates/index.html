@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 {% load static %}
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Pedidos </title>
 
     <!--CSS
@@ -86,15 +87,18 @@
 
 
         <header id="cabecalho" class="fixed-top col-sm-12">
+
           <hgroup>
 
+
             <!-- esse aparece no PC -->
-            <div id="logo_cabecalho" class="col-sm-2 d-none d-sm-block">
+            <div id="logo_cabecalho" class="col-md-2 d-none d-md-block">
                   <img id = "icone"  src= {% static 'css/img/SL.png' %} />
             </div>
 
+
             <!-- esse aparece no CEL -->
-            <div id="logo_cabecalho2" class="col-sm-1 d-block d-sm-none">
+            <div id="logo_cabecalho2" class="col-md-1 d-block d-md-none">
                   <img id = "icone2"  src= {% static 'css/img/SL.png' %} />
             </div>
 
@@ -106,8 +110,8 @@
             </h3>
 
             <div class="row">
-                <!-- quando for smartfone pega 12 coluna, se nao, pega 8 -->
-              <nav class = "menu col-sm-7 col-xs-12">
+                <!-- quando for smartfone pega 12 coluna, se nao, pega 7 -->
+              <nav class = "menu col-xs-12  col-md-7" >
                 <ul>
                     <li> <a id="inicio" href = "#"> Inicio </a></li>
                     <li> <a id="entrega" href = "#" > Entrega </a></li>
@@ -115,8 +119,8 @@
                 </ul>
               </nav>
 
-                <!-- quando for smartfone pega 12 coluna, se nao, pega 8 -->
-              <div class = "carrinho-menu col-sm-5 col-xs-12" >
+                <!-- quando for smartfone pega 12 coluna, se nao, pega 5 -->
+              <div class = "carrinho-menu col-xs-12  col-md-5 " >
                   <h4> Valor da compra R$
                   <input type="text" class="form-control" aria-label="Quantia"> </h4>
 
@@ -150,7 +154,7 @@
 
       <div class="row">
           <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
-        <div class = "tela-itens col-sm-12 col-xs-12">
+        <div class = "tela-itens col-md-12 col-xs-12">
           <h4> Faça seu pedido, Boas compras! </h4>
 
             <div id="pedBebidas">
