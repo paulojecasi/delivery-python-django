@@ -193,6 +193,9 @@ div#logo_cabecalho2 img#icone2{
 
 
 .tela-itens{
+
+    height: 100%px ;                    /** altura do bloco **/
+    width: 100%px;                       /** largura **/
     background-color:  #FFFFE0;
     padding: 160px;
 

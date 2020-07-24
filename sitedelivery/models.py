@@ -21,6 +21,10 @@ class Cidade(models.Model):
     def __str__(self):
         return self.cidade + " " + self.estado
 
+    class Meta:
+        verbose_name = '2 - Cadastro de Cidade'
+        verbose_name_plural = '2 - Cadastro de Cidades'
+
 
 class Bairro(models.Model):
     COBERTURA_CHOICES = (
@@ -46,6 +50,10 @@ class Bairro(models.Model):
     cobertura = models.CharField(max_length=1, blank=True, null=True,
                                  verbose_name='Entregar neste Bairro?',
                                 choices=COBERTURA_CHOICES, default="N")
+
+    class Meta:
+        verbose_name = '3 - Cadastro de Bairro'
+        verbose_name_plural = '3 - Cadastro de Bairros'
 
 
 class Cliente(models.Model):
@@ -91,6 +99,10 @@ class Cliente(models.Model):
     latitude = models.FloatField(blank=True, null=True, verbose_name='Latitude')
     longitude = models.FloatField(blank=True, null=True, verbose_name='Longitude')
 
+    class Meta:
+        verbose_name = 'Cliente Cadastrado'
+        verbose_name_plural = 'Clientes Cadastrados'
+
 class Entrega(models.Model):
 
     cliente = models.ForeignKey(Cliente, related_name='entrega_cliente',
@@ -112,6 +124,10 @@ class Entrega(models.Model):
                                verbose_name='Cidade')
     latitude = models.FloatField(blank=True, null=True, verbose_name='Latitude')
     longitude = models.FloatField(blank=True, null=True, verbose_name='Longitude')
+
+    class Meta:
+        verbose_name = 'Endereço de Entrega Cadastrado'
+        verbose_name_plural = 'Endereços de Entregas Cadastrados'
 
 
 
@@ -219,6 +235,8 @@ class Produto(models.Model):
 
     class Meta:
         ordering = ['bebida']
+        verbose_name = '1 - Cadastro e manutenção de Produto'
+        verbose_name_plural = '1 - Cadastro e manutenção de Produtos'
 
 
 
@@ -326,6 +344,13 @@ class Pedido(models.Model):
 
     def __str__(self):
         return str(self.id)
+
+    class Meta:
+        verbose_name = 'Pedido Realizado'
+        verbose_name_plural = 'Pedidos Realizados'
+
+
+
 
 
 
