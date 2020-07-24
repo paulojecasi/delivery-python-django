@@ -528,35 +528,38 @@ div#logo_cabecalho2 img#icone2{
 
     .corDeFundoPreco{
         background-color: rgba(255,255,255);         /** cor de fundo **/
-        height: 175px ;                    /** altura do bloco **/
+        height: 200px ;                    /** altura do bloco **/
         width: 170px;                      /** largura **/
         border: 1px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 0px 0px 3px 3px;  /** arredondamento da borda **/
         font-size: 15px;                          /** tamanho da fonte **/
 
+
+
     }
 
     #pedBebidas ul li#fonte1{
-        font-size: 16px;                          /** tamanho da fonte **/
-        font-weight: bold;                        /** fonte em negrito **/
+        font-size: 17px;                          /** tamanho da fonte **/
+        /** font-weight: bold;                        /** fonte em negrito **/
         color: #000;                              /** cor da fonte **/
         text-align: center;
+        line-height:15px;                          /** espaço entre as linhas **/
     }
 
     #pedBebidas ul li#fonte2{
-        line-height:6px;                          /** espaço entre as linhas **/
+        line-height:17px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 
 
     }
 
     #pedBebidas ul li#fonte3{
-        line-height:25px;                          /** espaço entre as linhas **/
+        line-height:17px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
     }
 
     #pedBebidas ul li#fonte4{
-        font-size: 20px;                          /** tamanho da fonte **/
+        font-size: 22px;                          /** tamanho da fonte **/
         /**font-weight: bold;                        /** fonte em negrito **/
         color: #000;                              /** cor da fonte **/
         line-height:30px;                          /** espaço entre as linhas **/
@@ -589,7 +592,6 @@ div#logo_cabecalho2 img#icone2{
 
 
     }
-
 
     .imagemProdutoCatalogo{
 
@@ -645,7 +647,6 @@ div#logo_cabecalho2 img#icone2{
     }
 
 
-
     #botoesTot{
 
         font: bold 20px/24px arial, helvetica, sans-aerif;
@@ -666,7 +667,6 @@ div#logo_cabecalho2 img#icone2{
         margin-left: 2px;
 
     }
-
 
 
     #inputTotais{
@@ -703,9 +703,7 @@ div#logo_cabecalho2 img#icone2{
         margin-left: 1px;
 
 
-
     }
-
 
     
 
