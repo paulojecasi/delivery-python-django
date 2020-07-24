@@ -5,12 +5,12 @@ from datetime import datetime
 
 class Cidade(models.Model):
     CIDADE_CHOICES = (
-        ('TERESINA', u'TERESINA'),
-        ('TIMOM', u'TIMOM')
+        ('TERESINA', 'TERESINA'),
+        ('TIMOM', 'TIMOM')
     )
     ESTADO_CHOICES = (
-        ('PI', u'PIAUI'),
-        ('MA', u'MARANHAO')
+        ('PI', 'PIAUI'),
+        ('MA', 'MARANHAO')
     )
 
     cidade = models.CharField(max_length=100, blank=True, null=True, verbose_name='Cidade',
@@ -28,16 +28,16 @@ class Cidade(models.Model):
 
 class Bairro(models.Model):
     COBERTURA_CHOICES = (
-        ('S', u'SIM'),
-        ('N', u'NAO')
+        ('S', 'SIM'),
+        ('N', 'NAO')
     )
 
     ZONA_CHOICES = (
-        ('RC', u'REGIAO CENTRAL'),
-        ('ZN', u'ZONA NORTE'),
-        ('ZS', u'ZONA SUL'),
-        ('ZL', u'ZONA LESTE'),
-        ('ZD', u'ZONA SUDESTE')
+        ('RC', 'REGIAO CENTRAL'),
+        ('ZN', 'ZONA NORTE'),
+        ('ZS', 'ZONA SUL'),
+        ('ZL', 'ZONA LESTE'),
+        ('ZD', 'ZONA SUDESTE')
 
     )
     cidade = models.ForeignKey(Cidade, related_name='bairro_cidade',
