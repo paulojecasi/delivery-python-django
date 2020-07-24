@@ -10,7 +10,8 @@ from .models import(
     Carrinho,
     Produto,
     Cidade,
-    Bairro
+    Bairro,
+    Libera
 )
 
 class ProdutoAdmin(admin.ModelAdmin):
@@ -30,6 +31,13 @@ class BairroAdmin(admin.ModelAdmin):
     list_filter = ('cidade','bairro','zona','cobertura')               #-adc um filtro na tela
     search_fields = ('cidade','bairro','zona','cobertura')             #-cria um campo de busca
 
+class LiberaAdmin(admin.ModelAdmin):
+    #fields = ('cidade', 'estado')                  #-campos p/ aparecer no cadastro
+    list_display = ('pagina','libera')  # -campos p/ aparecer na lista
+    list_filter = ('pagina','libera')               #-adc um filtro na tela
+    search_fields = ('pagina','libera')             #-cria um campo de busca
+
+
 admin.site.register(Cliente)
 admin.site.register(Pedido)
 admin.site.register(Entrega)
@@ -37,3 +45,4 @@ admin.site.register(Produto,ProdutoAdmin)
 admin.site.register(Carrinho)
 admin.site.register(Cidade,CidadeAdmin)
 admin.site.register(Bairro,BairroAdmin)
+admin.site.register(Libera,LiberaAdmin)

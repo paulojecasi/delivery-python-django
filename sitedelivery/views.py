@@ -11,7 +11,8 @@ from .models import (
     Carrinho,
     Entrega,
     Pedido,
-    Bairro
+    Bairro,
+    Libera
 )
 
 def Delivery(request):
@@ -19,13 +20,15 @@ def Delivery(request):
 
     produtosDoSite = Produto.objects.filter(site="SIM")
     bairroEntrega = Bairro.objects.filter(cobertura="S")
+    libera_delivery = Libera.objects.filter(pagina="delivery")
     tipo = "delivery"
 
 
     dados = {
         'ProdutosDoSite': produtosDoSite,
         'BairroEntrega': bairroEntrega,
-        'Tipo': tipo
+        'Tipo': tipo,
+        'Libera_delivery':libera_delivery
 
     }
 
@@ -37,11 +40,13 @@ def Catalogo(request):
     produtosDoSite = Produto.objects.filter(site="SIM")
     bairroEntrega = Bairro.objects.filter(cobertura="S")
     tipo = "catalogo"
+    libera_catalogo = Libera.objects.filter(pagina="catalogo")
 
     dados = {
         'ProdutosDoSite': produtosDoSite,
         'BairroEntrega': bairroEntrega,
-        'Tipo': tipo
+        'Tipo': tipo,
+        'Libera_catalogo': libera_catalogo
 
     }
 

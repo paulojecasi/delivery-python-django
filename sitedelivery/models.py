@@ -22,8 +22,8 @@ class Cidade(models.Model):
         return self.cidade + " " + self.estado
 
     class Meta:
-        verbose_name = '2 - Cadastro de Cidade'
-        verbose_name_plural = '2 - Cadastro de Cidades'
+        verbose_name = '3 - Cadastro de Cidade'
+        verbose_name_plural = '3 - Cadastro de Cidades'
 
 
 class Bairro(models.Model):
@@ -52,8 +52,8 @@ class Bairro(models.Model):
                                 choices=COBERTURA_CHOICES, default="N")
 
     class Meta:
-        verbose_name = '3 - Cadastro de Bairro'
-        verbose_name_plural = '3 - Cadastro de Bairros'
+        verbose_name = '4 - Cadastro de Bairro'
+        verbose_name_plural = '4 - Cadastro de Bairros'
 
 
 class Cliente(models.Model):
@@ -351,9 +351,27 @@ class Pedido(models.Model):
 
 
 
+class Libera(models.Model):
+    LIBERA_CHOICES = (
+        ('S', 'SIM'),
+        ('N', 'NAO'),
+    )
+    pagina = models.CharField(
+        max_length=40,
+        blank=True,
+        null=True,
+        verbose_name='Pagina ')
 
+    libera = models.CharField(
+        max_length=1,
+        blank=True,
+        null=True,
+        verbose_name='Liberada para uso? ',
+        choices=LIBERA_CHOICES)
 
+    def __str__(self):
+        return self.pagina + "- Pagina liberada para uso?: " + self.libera
 
-
-
-
+    class Meta:
+        verbose_name = '2 - Liberação de Página'
+        verbose_name_plural = '2 - Liberação de Páginas'
