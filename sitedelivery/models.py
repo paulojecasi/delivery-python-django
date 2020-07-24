@@ -13,9 +13,9 @@ class Cidade(models.Model):
         ('MA', 'MARANHAO')
     )
 
-    cidade = models.CharField(max_length=100, blank=True, null=True, verbose_name='Cidade',
+    cidade = models.CharField(max_length=30, blank=True, null=True, verbose_name='Cidade',
                               choices=CIDADE_CHOICES)
-    estado = models.CharField(max_length=100, blank=True, null=True, verbose_name='U F',
+    estado = models.CharField(max_length=2, blank=True, null=True, verbose_name='U F',
                               choices=ESTADO_CHOICES)
 
     def __str__(self):
@@ -80,14 +80,18 @@ class Cliente(models.Model):
     numero = models.CharField(max_length=6, blank=True, null=True, verbose_name='Numero')
     complemento = models.CharField(max_length=300, blank=True, null=True, verbose_name='Complemento')
     cep = models.CharField(max_length=10, verbose_name='Cep')
-    bairro = models.ForeignKey(Bairro, related_name='cliente_bairro',
-                               on_delete=models.CASCADE,
-                               null=True,
-                               verbose_name='Bairro')
-    cidade = models.ForeignKey(Cidade, related_name='cliente_cidade',
-                               on_delete=models.CASCADE,
-                               null=True,
-                               verbose_name='Cidade')
+    cidade = models.CharField(max_length=100, blank=True, null=True, verbose_name='Cidade')
+    estado = models.CharField(max_length=100, blank=True, null=True, verbose_name='Estado')
+
+    #bairro = models.ForeignKey(Bairro, related_name='cliente_bairro',
+    #                           on_delete=models.CASCADE,
+    #                           null=True,
+    #                           verbose_name='Bairro')
+    #cidade = models.ForeignKey(Cidade, related_name='cliente_cidade',
+    #                           on_delete=models.CASCADE,
+    #                           null=True,
+    #                           verbose_name='Cidade')
+
     telcelular = models.CharField(max_length=20, blank=True, null=True, verbose_name='Nº telefone celular')
     telfixo = models.CharField(max_length=20, blank=True, null=True, verbose_name='Nº telefone fixo')
     email = models.EmailField(blank=True, null=True,verbose_name='E-Mail')
@@ -114,14 +118,16 @@ class Entrega(models.Model):
     numero = models.CharField(max_length=6, blank=True, null=True, verbose_name='Numero')
     complemento = models.CharField(max_length=300, blank=True, null=True, verbose_name='Complemento')
     cep = models.CharField(max_length=10, verbose_name='Cep')
-    bairro = models.ForeignKey(Bairro, related_name='entrega_bairro',
-                               on_delete=models.CASCADE,
-                               null=True,
-                               verbose_name='Bairro')
-    cidade = models.ForeignKey(Cidade, related_name='entrega_cidade',
-                               on_delete=models.CASCADE,
-                               null=True,
-                               verbose_name='Cidade')
+    cidade = models.CharField(max_length=100, blank=True, null=True, verbose_name='Cidade')
+    estado = models.CharField(max_length=100, blank=True, null=True, verbose_name='Estado')
+    #bairro = models.ForeignKey(Bairro, related_name='entrega_bairro',
+    #                           on_delete=models.CASCADE,
+    #                           null=True,
+    #                           verbose_name='Bairro')
+    #cidade = models.ForeignKey(Cidade, related_name='entrega_cidade',
+    #                           on_delete=models.CASCADE,
+    #                           null=True,
+    #                           verbose_name='Cidade')
     latitude = models.FloatField(blank=True, null=True, verbose_name='Latitude')
     longitude = models.FloatField(blank=True, null=True, verbose_name='Longitude')
 
