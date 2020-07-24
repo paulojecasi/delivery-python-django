@@ -13,6 +13,11 @@ from .models import(
     Bairro
 )
 
+class ProdutoAdmin(admin.ModelAdmin):
+    #fields = ('cidade', 'estado')                  #-campos p/ aparecer no cadastro
+    list_filter = ('bebida','site')               #-adc um filtro na tela
+    search_fields = ('bebida','site')             #-cria um campo de busca
+
 class CidadeAdmin(admin.ModelAdmin):
     #fields = ('cidade', 'estado')                  #-campos p/ aparecer no cadastro
     list_display = ('id','cidade','estado')         #-campos p/ aparecer na lista
@@ -28,7 +33,7 @@ class BairroAdmin(admin.ModelAdmin):
 admin.site.register(Cliente)
 admin.site.register(Pedido)
 admin.site.register(Entrega)
-admin.site.register(Produto)
+admin.site.register(Produto,ProdutoAdmin)
 admin.site.register(Carrinho)
 admin.site.register(Cidade,CidadeAdmin)
 admin.site.register(Bairro,BairroAdmin)
