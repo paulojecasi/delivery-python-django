@@ -22,8 +22,8 @@ class Cidade(models.Model):
         return self.cidade + " " + self.estado
 
     class Meta:
-        verbose_name = '3 - Cadastro de Cidade'
-        verbose_name_plural = '3 - Cadastro de Cidades'
+        verbose_name = '3  Cadastro de Cidade'
+        verbose_name_plural = '3  Cadastro de Cidades'
 
 
 class Bairro(models.Model):
@@ -52,8 +52,8 @@ class Bairro(models.Model):
                                 choices=COBERTURA_CHOICES, default="N")
 
     class Meta:
-        verbose_name = '4 - Cadastro de Bairro'
-        verbose_name_plural = '4 - Cadastro de Bairros'
+        verbose_name = '4  Cadastro de Bairro'
+        verbose_name_plural = '4  Cadastro de Bairros'
 
 
 class Cliente(models.Model):
@@ -231,12 +231,12 @@ class Produto(models.Model):
                                  auto_now=False)
 
     def __str__(self):
-        return self.bebida +  " " + self.tamanho + " - " + self.complemento + " -        Site: " + self.site
+        return self.bebida +  " " + self.tamanho + "  " + self.complemento + "         Site: " + self.site
 
     class Meta:
         ordering = ['bebida']
-        verbose_name = '1 - Cadastro e manutenção de Produto'
-        verbose_name_plural = '1 - Cadastro e manutenção de Produtos'
+        verbose_name = '1  Cadastro e manutenção de Produto'
+        verbose_name_plural = '1  Cadastro e manutenção de Produtos'
 
 
 
@@ -370,8 +370,8 @@ class Libera(models.Model):
         choices=LIBERA_CHOICES)
 
     def __str__(self):
-        return self.pagina + "- Pagina liberada para uso?: " + self.libera
+        return self.pagina + " Pagina liberada para uso?: " + self.libera
 
     class Meta:
-        verbose_name = '2 - Liberação de Página'
-        verbose_name_plural = '2 - Liberação de Páginas'
+        verbose_name = '2  Liberação de Página'
+        verbose_name_plural = '2  Liberação de Páginas'
