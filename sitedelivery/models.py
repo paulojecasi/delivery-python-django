@@ -5,8 +5,8 @@ from datetime import datetime
 
 class Cidade(models.Model):
     CIDADE_CHOICES = (
-        ('TERESINA', 'TERESINA'),
-        ('TIMOM', 'TIMOM')
+        ('TE', 'TERESINA'),
+        ('TI', 'TIMOM')
     )
     ESTADO_CHOICES = (
         ('PI', 'PIAUI'),
@@ -50,6 +50,9 @@ class Bairro(models.Model):
     cobertura = models.CharField(max_length=1, blank=True, null=True,
                                  verbose_name='Entregar neste Bairro?',
                                 choices=COBERTURA_CHOICES, default="N")
+
+    def __str__(self):
+        return self.bairro
 
     class Meta:
         verbose_name = '4  Cadastro de Bairro'
