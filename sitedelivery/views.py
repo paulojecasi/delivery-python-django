@@ -20,7 +20,7 @@ def Delivery(request):
 
     produtosDoSite = Produto.objects.filter(site="SIM")
     bairroEntrega = Bairro.objects.filter(cobertura="S")
-    libera_delivery = Libera.objects.filter(pagina="delivery")
+    libera_delivery = Libera.objects.filter(pagina="delivery",libera="S")
     tipo = "delivery"
 
 
@@ -32,7 +32,11 @@ def Delivery(request):
 
     }
 
-    return render(request,'delivery.html',dados)
+    if libera_delivery:
+        return render(request,'delivery.html',dados)
+    else:
+        return render(request,'siteNaoDisponivel.html', dados)
+
 
 def Catalogo(request):
 
@@ -40,17 +44,20 @@ def Catalogo(request):
     produtosDoSite = Produto.objects.filter(site="SIM")
     bairroEntrega = Bairro.objects.filter(cobertura="S")
     tipo = "catalogo"
-    libera_catalogo = Libera.objects.filter(pagina="catalogo")
+    libera_catalogo = Libera.objects.filter(pagina="catalogo",libera="S")
 
     dados = {
         'ProdutosDoSite': produtosDoSite,
         'BairroEntrega': bairroEntrega,
         'Tipo': tipo,
         'Libera_catalogo': libera_catalogo
-
     }
 
-    return render(request,'catalogo.html',dados)
+    if libera_catalogo:
+        return render(request,'catalogo.html',dados)
+    else:
+        return render(request, 'siteNaoDisponivel.html', dados)
+
 
 def Administracao(request):
 

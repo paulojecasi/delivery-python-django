@@ -709,6 +709,12 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
+#site-inoperante{
+
+    text-align:center;
+
+}
+
 footer{
     height: 100%px ;                    /** altura do bloco **/
     width: 100%px;                       /** largura **/

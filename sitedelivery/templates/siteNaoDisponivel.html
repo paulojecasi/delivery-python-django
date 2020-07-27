@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Custom styles for this template -->
+  <link href= {% static 'css/aplication.css' %} rel="stylesheet" >
+  <script src = {% static 'js/myaplication.js' %} > </script>
+
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+  <div class="alert alert-warning" role="alert" id="site-inoperante">
+    <h4 class="alert-heading"> SL CONVENIENCIA Informa!</h4>
+
+    <p></p>
+
+    {% if Tipo == "catalogo" %}
+        <p> CATALOGO DE PRODUTOS temporariamente indisponivel. Voltaremos logo logo
+          com mais produto pra você </p>
+    {% endif %}
+
+    {% if Tipo == "delivery" %}
+        <p> DELIVERY temporariamente indisponivel. Voltaremos logo logo
+          com mais produto pra você </p>
+    {% endif %}
+
+    <hr>
+    <p class="mb-0"> Agradecemos sua visita</p>
+  </div>
+
+</body>
+</html>
