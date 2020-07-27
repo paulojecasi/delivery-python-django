@@ -133,42 +133,54 @@ class Entrega(models.Model):
 
 class Produto(models.Model):
     BEBIDAS_CHOICES = (
-        ('KAISER', 'KAISER'),
-        ('BRAHMA', 'BRAHMA'),
-        ('SKOL', 'SKOL'),
-        ('ANTARCTICA', 'ANTARCTICA'),
-        ('BOHEMIA', 'BOHEMIA'),
-        ('HEINEKEN', 'HEINEKEN'),
-        ('STELLA', 'STELLA'),
-        ('BAVARIA', 'BAVARIA'),
-        ('GLACIAL', 'GLACIAL'),
-        ('TIJUCA','TIJUCA'),
-        ('PETRA','PETRA'),
-        ('SCHIN', 'SCHIN'),
-        ('ITAIPAVA', 'ITAIPAVA'),
-        ('CRYSTAL', 'CRYSTAL'),
-        ('DEVASSA', 'DEVASSA'),
-        ('EISENBAHN', 'EISENBAHN'),
-        ('CORONA', 'CORONA'),
-        ('BUDWEISER', 'BUDWEISER'),
-        ('CARACU', 'CARACU'),
-        ('BADER','BADER'),
-        ('TERESOPOLIS','TERESOPOLIS'),
-        ('REFRI COCACOLA', 'REFRI COCA COLA'),
+        ('KAISER', 'CERVEJA KAISER'),
+        ('BRAHMA', 'CERVEJA BRAHMA'),
+        ('SKOL', 'CERVEJA SKOL'),
+        ('ANTARCTICA', 'CERVEJA ANTARCTICA'),
+        ('BOHEMIA', 'CERVEJA BOHEMIA'),
+        ('HEINEKEN', 'CERVEJA HEINEKEN'),
+        ('STELLA', 'CERVEJA STELLA'),
+        ('BAVARIA', 'CERVEJA BAVARIA'),
+        ('GLACIAL', 'CERVEJA GLACIAL'),
+        ('TIJUCA','CERVEJA TIJUCA'),
+        ('PETRA','CERVEJA PETRA'),
+        ('SCHIN', 'CERVEJA SCHIN'),
+        ('ITAIPAVA', 'CERVEJA ITAIPAVA'),
+        ('CRYSTAL', 'CERVEJA CRYSTAL'),
+        ('DEVASSA', 'CERVEJA DEVASSA'),
+        ('EISENBAHN', 'CERVEJA EISENBAHN'),
+        ('CORONA', 'CERVEJA CORONA'),
+        ('BUDWEISER', 'CERVEJA BUDWEISER'),
+        ('CARACU', 'CERVEJA CARACU'),
+        ('BADER','CERVEJA BADER'),
+        ('TERESOPOLIS','CERVEJA TERESOPOLIS'),
+        ('COCACOLA', 'REFRIGERANTE COCA COLA'),
         ('GUARANA ANTARCTICA','GUARANA ANTARCTICA'),
         ('GUARANA SCHIN','GUARANA SCHIN'),
         ('GUARANA FANTA', 'GUARANA FANTA'),
         ('GUARANA KUAT', 'GUARANA KUAT'),
-        ('REFRI FANTA LARANJA','REFRI FANTA LARANJA'),
-        ('REFRI FANTA UVA', 'REFRI FANTA UVA')
-
-
-
-
-
+        ('FANTA LARANJA','REFRIGERANTE FANTA LARANJA'),
+        ('FANTA UVA', 'REFRIGERANTE FANTA UVA')
     )
     ordena_choices = sorted(BEBIDAS_CHOICES, key=lambda x: x[1])
     BEBIDAS_CHOICES = ordena_choices
+
+    DESC_CHOICES = (
+        ('Cerveja Pilsen', 'Cerveja Pilsen'),
+        ('Cerveja Lager', 'Cerveja Lager'),
+        ('Cerveja Puro Malte', 'Cerveja Puro Malte'),
+        ('Cerveja Duplo Malte', 'Cerveja Duplo Malte'),
+        ('Cerveja Premium', 'Cerveja Premium'),
+        ('Cerveja Heles', 'Cerveja Heles'),
+        ('Cerveja Dortmunder Export', 'Cerveja Dortmunder Export'),
+        ('Cerveja Dry Beer', 'Cerveja Dry Beer'),
+        ('Refrigerante Cola', 'Refrigerante Cola'),
+        ('Guarana', 'Guarana'),
+        ('Refrigerante', 'Refrigerante')
+
+    )
+    ordena_choices = sorted(DESC_CHOICES, key=lambda x: x[1])
+    DESC_CHOICES = ordena_choices
 
     TAMANHO_CHOICES = (
         ('GARRAFA 1 LT RETORNAVEL', 'GARRAFA 1 LT RETORNAVEL'),
@@ -211,7 +223,8 @@ class Produto(models.Model):
                               help_text='Selecione o produto')
     complemento = models.CharField(max_length=200, blank=True, null=True,
                                    verbose_name='Descrição Complementar',
-                                   help_text='Digite o complemento de informações do produto')
+                                   help_text='Complemento de informações do produto',
+                                   choices=DESC_CHOICES)
     tamanho = models.CharField(max_length=100, verbose_name='Tamanho', choices=TAMANHO_CHOICES,
                                help_text='Selecione a quantidade/tamanho')
     valor = models.DecimalField(max_digits=12, decimal_places=2, verbose_name='Valor R$',
