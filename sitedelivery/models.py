@@ -43,7 +43,7 @@ class Bairro(models.Model):
     cidade = models.ForeignKey(Cidade, related_name='bairro_cidade',
                                 on_delete=models.CASCADE,
                                 null=True,
-                                verbose_name='Cidade',default="TERESINA")
+                                verbose_name='Cidade')
     bairro = models.CharField(max_length=100, blank=True, null=True, verbose_name='Bairro')
     zona = models.CharField(max_length=2, blank=True, null=True, verbose_name='Zona',
                             choices=ZONA_CHOICES,default="ZD")
