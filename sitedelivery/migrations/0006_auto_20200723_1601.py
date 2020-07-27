@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='bairro',
             name='cidade',
-            field=models.ForeignKey(default='TERESINA', null=True, on_delete=django.db.models.deletion.CASCADE, related_name='bairro_cidade', to='sitedelivery.Cidade', verbose_name='Cidade'),
+            field=models.ForeignKey(default='1', null=True, on_delete=django.db.models.deletion.CASCADE, related_name='bairro_cidade', to='sitedelivery.Cidade', verbose_name='Cidade'),
         ),
         migrations.AlterField(
             model_name='bairro',
