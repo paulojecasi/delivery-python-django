@@ -231,7 +231,7 @@ class Produto(models.Model):
                                  auto_now=False)
 
     def __str__(self):
-        return self.bebida +  " " + self.tamanho + "  " + self.complemento + "         Site: " + self.site
+        return self.bebida +  " " + self.tamanho + "  " + self.complemento + ",    Site: " + self.site
 
     class Meta:
         ordering = ['bebida']

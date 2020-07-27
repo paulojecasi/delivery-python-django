@@ -7,7 +7,13 @@
       <div class="row">
           <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
         <div class = "tela-itens-catalogo col-md-12 col-xs-12">
-          <h4> Nossos produtos disponiveis </h4>
+
+          {% if ProdutosDoSite %}
+              <h4> Nossos produtos disponiveis </h4>
+          {% else %}
+              <h4> Sem produtos no momento, estamos renovando
+                o estoque com os melhores produtos para lhe atender bem! </h4>
+          {% endif %}
 
             <div id="catalogo">
               {% for PRODUTOS_DO_SITE in ProdutosDoSite %}

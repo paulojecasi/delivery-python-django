@@ -709,3 +709,18 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
+footer{
+    height: 100%px ;                    /** altura do bloco **/
+    width: 100%px;                       /** largura **/
+    text-align: center;
+
+
+}
+img#logo_cactos{
+    text-align: center; 
+    height: 30px;
+    min-height: 60px;
+    width: 130px;                       /** largura **/
+
+}
+
