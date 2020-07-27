@@ -5,8 +5,8 @@ from datetime import datetime
 
 class Cidade(models.Model):
     CIDADE_CHOICES = (
-        ('TE', 'TERESINA'),
-        ('TI', 'TIMOM')
+        ('TERESINA', 'TERESINA'),
+        ('TIMOM', 'TIMOM')
     )
     ESTADO_CHOICES = (
         ('PI', 'PIAUI'),
