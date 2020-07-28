@@ -59,14 +59,17 @@ function avisoSemEnderecoEntrega(){
 }
 
 function botaoMaisUm(id){
+
  
     var _varTotal =0
     var maisUm = document.getElementById(id).value
     var maisUm =  parseFloat(maisUm) + 1
     document.getElementById(id).value = maisUm
 
+
     //var _varTotal = (document.getElementById("campoValorUnitario").value *
        var _varTotal = (10 * document.getElementById(id).value)
+
 
 
 
@@ -74,9 +77,9 @@ function botaoMaisUm(id){
     //alert(_varTotal)
 
 
-    document.getElementByName(id).value = _varTotal
+    document.getElementById("campoTotal"+id).value = _varTotal
 
-
+    alert("AQUI "+document.getElementById("campoTotal"+id).value)
 
 }
 

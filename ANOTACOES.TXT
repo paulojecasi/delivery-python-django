@@ -1,0 +1,119 @@
+1 -PARA QUE A IMAGEM DOS PRODUTOS COM ENDEREÇOS GRAVADOS NO BD POSSAM
+   APARECER NOS TEMPLATES, FAÇAM AS SEGUINTE CONFIGURAÕES:
+
+   OBS - TUDO NA PASTA DO PROJETO PRINCIPAL, E NAO NO APP
+
+   1.1 - No Settings.py, va para o final do arquivo e coloque as seguintes configurações:
+
+     STATIC_URL = '/static/'
+     MEDIA_URL = '/media/'
+     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+    1.2 -  Na Urls.py, assim que fechar o "urlpatterns" coloque o comando abaixo:
+
+      + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+      Exemplo:
+
+      urlpatterns = [
+      path('admin/', admin.site.urls),
+      ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
+      1.2.1 - importar as dependencias:
+       from django.conf import settings
+       from django.conf.urls.static import static
+
+
+   1.3 - No models.py, no campo definido para gravar a imagem, no "upload_to" coloque o seguinte caminho:
+
+     upload_to='media/images/produtos'
+
+
+2 - ao definir acesso LOGIN faça as configurações das paginas que será acessada depois
+    do LOGIN e LOGOUT. Isso no SETTINGS.PY, veja abaixo:
+
+    LOGIN_URL = 'inicio'
+    LOGIN_REDIRECT_URL = 'inicio'
+    LOGOUT_REDIRECT_URL = 'inicio'
+
+
+3 - Alterar Titulo no Admin Django
+    3.1 - No settings.py, na linha TEMPLATES altere o codigo conforme abaixo:
+
+        -ORIGINALMENTE É ASSIM:
+
+            TEMPLATES = [
+                {
+                    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                    'DIRS': [],
+                    'APP_DIRS': True,
+                    'OPTIONS': {
+                        'context_processors': [
+                            'django.template.context_processors.debug',
+                            'django.template.context_processors.request',
+                            'django.contrib.auth.context_processors.auth',
+                            'django.contrib.messages.context_processors.messages',
+                        ],
+                    },
+                },
+            ]
+
+
+
+        -VAI FICAR ASSIM:
+
+
+            TEMPLATES = [
+                {
+                    'BACKEND': 'django.template.backends.django.DjangoTemplates',
+                    'DIRS': ['templates'],
+                    #'APP_DIRS': True,
+                    'OPTIONS': {
+                     'context_processors': [
+                            'django.template.context_processors.debug',
+                            'django.template.context_processors.request',
+                            'django.contrib.auth.context_processors.auth',
+                            'django.contrib.messages.context_processors.messages',
+                        ],
+                        'loaders':[
+                            'django.template.loaders.filesystem.Loader',
+                            'django.template.loaders.app_directories.Loader',
+                        ]
+                    },
+                },
+            ]
+
+    3.2 - Crie uma pasta 'templates' no mesmo diretorio do seu projeto(nao dentro).
+            Dentro da pasta criada 'templates' crie a pasta 'admin'.
+            Dentro da pasta 'admin' crie um documento HTML chamado 'base_site.html' .
+            Dentro do 'base_site.html' copie e cole o codigo abaixoe altere as
+            informações conforme desejar:
+
+
+            {% extends "admin/base.html" %}
+            {% load i18n %}
+
+            {% block title %}{{ title }} | {% trans 'GRUPO JECASI - ADMINISTRAÇÃO' %}{% endblock %}
+
+            {% block branding %}
+
+            <p>
+                <font color="#F0E68C" size=1>
+                    {% trans 'JECASI TECNOLOGIA - SOLUÇÕES EM TI' %}
+                </font>
+            </p>
+
+            <font size=6 color="#DCDCDC" id="site-name">
+                {% trans 'GRUPO JECASI - ADMINISTRAÇÃO DO SISTEMA' %}
+            </font>
+
+            {% endblock %}
+
+            {% block nav-global %}{% endblock %}
+
+
+
+
+
+

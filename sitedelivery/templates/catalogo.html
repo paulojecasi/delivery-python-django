@@ -7,6 +7,9 @@
       <div class="row">
           <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
         <div class = "tela-itens-catalogo col-md-12 col-xs-12">
+          {% if user.is_authenticated %}
+            <h4> Desmonstração para o ADMINISTRADOR do sistema  </h4>
+          {% endif %}
 
           {% if ProdutosDoSite %}
               <h4> Nossos produtos disponiveis </h4>

@@ -6,6 +6,11 @@
       <div class="row">
           <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
         <div class = "tela-itens col-md-12 col-xs-12">
+
+          {% if user.is_authenticated %}
+            <h4> Desmonstração para o ADMINISTRADOR do sistema </h4>
+          {% endif %}
+
           {% if ProdutosDoSite %}
               <h4> Faça seu pedido, Boas compras! </h4>
           {% else %}
@@ -62,8 +67,6 @@
                             </div>
 
 
-
-
                             <button type="button"
                                     class="btn btn-warning"
                                     onclick = "botaoMenosUm({{PRODUTOS_DO_SITE.id }})"
@@ -115,11 +118,16 @@
                         <div class="input-group-prepend">
                           <span class="input-group-text" id="col-form-label-sm">Total R$</span>
                         </div>
+
                         <input type="text"
                                class="form-control"
                                aria-label="Quantia"
-                               id="campoTotal"
-                               name = "{{PRODUTOS_DO_SITE.id}}" >
+
+                               {% with input_name="campoTotal"|add:PRODUTOS_DO_SITE.id %}
+                                   {% render_field modifier.campoTotal
+                                    name=input_name %}
+                               {% endwith %}
+                        >
 
                       </div>
 

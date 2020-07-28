@@ -5,6 +5,8 @@ from django.shortcuts import render, redirect
 from datetime import datetime
 from django.contrib import messages
 from django.http import HttpResponse
+from django.contrib.auth.models import User
+
 from .models import (
     Cliente,
     Produto,
@@ -35,7 +37,10 @@ def Delivery(request):
     if libera_delivery:
         return render(request,'delivery.html',dados)
     else:
-        return render(request,'siteNaoDisponivel.html', dados)
+        if request.user.is_authenticated:
+            return render(request, 'delivery.html', dados)
+        else:
+            return render(request, 'siteNaoDisponivel.html', dados)
 
 
 def Catalogo(request):
@@ -56,7 +61,10 @@ def Catalogo(request):
     if libera_catalogo:
         return render(request,'catalogo.html',dados)
     else:
-        return render(request, 'siteNaoDisponivel.html', dados)
+        if request.user.is_authenticated:
+            return render(request, 'catalogo.html', dados)
+        else:
+            return render(request, 'siteNaoDisponivel.html', dados)
 
 
 def Administracao(request):
