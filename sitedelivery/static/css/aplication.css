@@ -230,7 +230,7 @@ div#logo_cabecalho2 img#icone2{
 
 .corDeFundoPreco{
     background-color: rgba(255,255,255);         /** cor de fundo **/
-    height: 185px ;                    /** altura do bloco **/
+    height: 100%px ;                    /** altura do bloco **/
     width: 280px;                      /** largura **/
     border: 1px outset #DCDCDC;        /** borda e cor da borda **/
     border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
@@ -299,7 +299,7 @@ div#logo_cabecalho2 img#icone2{
 
 .corDeFundoPrecoCatalogo{
     background-color: rgba(255,255,255);         /** cor de fundo **/
-    height: 120px ;                    /** altura do bloco **/
+    height: 100%px ;                    /** altura do bloco **/
     width: 280px;                      /** largura **/
     border: 2px outset #DCDCDC;        /** borda e cor da borda **/
     border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
@@ -330,6 +330,11 @@ div#logo_cabecalho2 img#icone2{
     color: #000;                              /** cor da fonte **/
     line-height:30px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
+    padding: 0px 0px 10px 10px;   /*  acima    50px  padding  */
+                                /*  direita  0px  padding  */
+                                /*  abaixo   00px padding  */
+                                /*  esquerda 30px  padding  */
+
 }
 
 .ladoALado{
