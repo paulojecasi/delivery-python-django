@@ -119,25 +119,29 @@
             <div class="row">
                 <!-- quando for smartfone pega 12 coluna, se nao, pega 7 -->
               {% if Tipo == "delivery" %}
-              <nav class = "menu col-xs-12  col-md-7" >
-                <ul>
+
+                <nav class = "menu col-xs-12  col-md-7" >
+                  <ul>
                     <li> <a id="inicio" href = "#"> Inicio </a></li>
                     <li> <a id="entrega" href = "#" > Entrega </a></li>
                     <li> <a id="pagamento" href = "#" > Pagamento </a></li>
-                </ul>
-              </nav>
+                  </ul>
+                </nav>
+
+
+
 
                 <!-- quando for smartfone pega 12 coluna, se nao, pega 5 -->
-              <div class = "carrinho-menu col-xs-12  col-md-5 " >
+                <div class = "carrinho-menu col-xs-12  col-md-5 " >
                   <h4> Valor da compra R$
                   <input type="text" class="form-control" aria-label="Quantia"> </h4>
 
 
-              </div>
+                </div>
               {% else %}
 
-              <nav class = "menu col-xs-12  col-md-12" >
-                <ul>
+                <nav class = "menu col-xs-12  col-md-12" >
+                  <ul>
                     <li> <a id="endereco" href = "#"> Endereço </a>
                         <ul id="endereco-menu">
                           <li> <a>  Quadra 31, Casa 40. Conj Manoel Evangelista II. Bairro Novo Horizonte  </a></li>
@@ -147,8 +151,8 @@
 
 
 
-                </ul>
-              </nav>
+                  </ul>
+                </nav>
               {% endif %}
 
             </div>

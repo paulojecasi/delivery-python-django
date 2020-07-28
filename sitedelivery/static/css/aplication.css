@@ -387,9 +387,17 @@ div#logo_cabecalho2 img#icone2{
 
     width:230px;
     height:20px;
-    margin-left: 0px;
+    margin-left: 0x;
     height:30px;
     top: 10px;
+
+}
+
+#campoQtdBoot input{
+
+    margin-left: 9px;
+    margin-top: 2px;
+    text-align:center;
 
 }
 
@@ -417,7 +425,7 @@ div#logo_cabecalho2 img#icone2{
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
 
     header#cabecalho{
 
@@ -683,6 +691,12 @@ div#logo_cabecalho2 img#icone2{
 
     }
 
+    #campoQtdBoot input{
+
+        margin-left: 3px;
+
+    }
+
     #campoQtdBoot2{
 
         width:160px;
@@ -729,4 +743,3 @@ img#logo_cactos{
     width: 130px;                       /** largura **/
 
 }
-

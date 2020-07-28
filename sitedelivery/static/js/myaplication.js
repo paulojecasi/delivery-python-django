@@ -31,7 +31,7 @@ function funcao_valor_total() {
     var varTotal = (document.getElementById("campoValorUnitario").value *
                     document.getElementById("campoQuantidade").value)
 
-    document.getElementById("campoTotal").value = varTotal
+    document.getElementById("campoTotal",id).value = varTotal
 
     document.getElementById("campoTotal2").value =
                document.getElementById("campoTotal").value
@@ -58,14 +58,15 @@ function avisoSemEnderecoEntrega(){
     alert("Atenção! Cadastre um endereço de entrega!");
 }
 
-function botaoMaisUm(){
+function botaoMaisUm(id){
+ 
     var _varTotal =0
-    var maisUm = document.getElementById("campoQuantidade").value
+    var maisUm = document.getElementById(id).value
     var maisUm =  parseFloat(maisUm) + 1
-    document.getElementById("campoQuantidade").value = maisUm
+    document.getElementById(id).value = maisUm
 
-    var _varTotal = (document.getElementById("campoValorUnitario").value *
-                    document.getElementById("campoQuantidade").value)
+    //var _varTotal = (document.getElementById("campoValorUnitario").value *
+       var _varTotal = (10 * document.getElementById(id).value)
 
 
 
@@ -73,17 +74,17 @@ function botaoMaisUm(){
     //alert(_varTotal)
 
 
-    document.getElementById("campoTotal").value = _varTotal
+    document.getElementByName(id).value = _varTotal
 
-    document.getElementById("campoTotal2").value = _varTotal
 
 
 }
 
-function botaoMenosUm(){
-    var menosUm = document.getElementById("campoQuantidade").value;
+function botaoMenosUm(id){
+
+    var menosUm = document.getElementById(id).value;
     var menosUm =  menosUm - 1;
-    document.getElementById("campoQuantidade").value = menosUm;
+    document.getElementById(id).value = menosUm;
 
     var varTotal = (document.getElementById("campoValorUnitario").value *
                     document.getElementById("campoQuantidade").value);

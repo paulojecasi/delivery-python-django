@@ -33,9 +33,9 @@ class BairroAdmin(admin.ModelAdmin):
 
 class LiberaAdmin(admin.ModelAdmin):
     #fields = ('cidade', 'estado')                  #-campos p/ aparecer no cadastro
-    list_display = ('pagina','libera')  # -campos p/ aparecer na lista
-    list_filter = ('pagina','libera')               #-adc um filtro na tela
-    search_fields = ('pagina','libera')             #-cria um campo de busca
+    list_display = ('pagina','libera','link')  # -campos p/ aparecer na lista
+    list_filter = ('pagina','libera','link')               #-adc um filtro na tela
+    search_fields = ('pagina','libera','link')             #-cria um campo de busca
 
 
 admin.site.register(Cliente)

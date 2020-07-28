@@ -371,6 +371,11 @@ class Pedido(models.Model):
 
 
 class Libera(models.Model):
+    PAGINAS_CHOICES = (
+        ('delivery','Delivery'),
+        ('catalogo','Catalogo')
+    )
+
     LIBERA_CHOICES = (
         ('S', 'SIM'),
         ('N', 'NAO'),
@@ -379,7 +384,8 @@ class Libera(models.Model):
         max_length=40,
         blank=True,
         null=True,
-        verbose_name='Pagina ')
+        choices= PAGINAS_CHOICES,
+        verbose_name='Pagina')
 
     libera = models.CharField(
         max_length=1,
@@ -387,6 +393,13 @@ class Libera(models.Model):
         null=True,
         verbose_name='Liberada para uso? ',
         choices=LIBERA_CHOICES)
+
+    link = models.CharField(
+        max_length=100,
+        blank=True,
+        null=True,
+        verbose_name= "Link da Pagina"
+    )
 
     def __str__(self):
         return self.pagina + " Pagina liberada para uso?: " + self.libera
