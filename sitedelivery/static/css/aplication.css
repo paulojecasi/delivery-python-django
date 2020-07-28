@@ -729,6 +729,18 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
+.aviso-administrador{
+    background-color: yellow;         /** cor de fundo **/
+}
+
+.aviso-administrador h4#site-lib{
+    background-color: green;         /** cor de fundo **/
+}
+
+.aviso-administrador h4#site-blo{
+    background-color: red;         /** cor de fundo **/
+}
+
 footer{
     height: 100%px ;                    /** altura do bloco **/
     width: 100%px;                       /** largura **/

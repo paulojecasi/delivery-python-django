@@ -7,9 +7,17 @@
       <div class="row">
           <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
         <div class = "tela-itens-catalogo col-md-12 col-xs-12">
-          {% if user.is_authenticated %}
-            <h4> Desmonstração para o ADMINISTRADOR do sistema  </h4>
-          {% endif %}
+          <div class = "aviso-administrador">
+            {% if user.is_authenticated %}
+              <h4> Desmonstração para o ADMINISTRADOR do sistema  </h4>
+              {% if Libera_catalogo %}
+                  <h4 id="site-lib"> O site CATALOGO se encontra LIBERADO no momento </h4>
+              {% else %}
+                  <h4 id="site-blo"> O site CATALOGO se encontra BLOQUEADO no momento </h4>
+              {% endif %}
+            {% endif %}
+          </div>
+
 
           {% if ProdutosDoSite %}
               <h4> Nossos produtos disponiveis </h4>
