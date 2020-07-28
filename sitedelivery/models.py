@@ -223,8 +223,9 @@ class Produto(models.Model):
         ('NAO', 'NAO')
     )
 
-
-
+    site = models.CharField(max_length=3, verbose_name='Para apresentação no site?',
+                            default="SIM", choices=PARAOSITE,
+                            help_text='Informe se o produto vai aparecer no site')
     bebida = models.CharField(max_length=100, verbose_name='Bebida', choices=BEBIDAS_CHOICES,
                               help_text='Selecione o produto')
     complemento = models.CharField(max_length=200, blank=True, null=True,
@@ -241,9 +242,6 @@ class Produto(models.Model):
     foto = models.FileField (upload_to='media/images/produtos', blank=True, null=True,
                              verbose_name='Foto do Produto',
                              help_text='Selecione a foto do produto')
-    site = models.CharField(max_length=3, verbose_name='Para apresentação no site?',
-                            default = "SIM", choices=PARAOSITE,
-                            help_text='Informe se o produto vai aparecer no site')
     dt_inicio = models.DateField('Data inicio da apresentação', blank=True, null=True,
                                  auto_now=False)
     dt_final = models.DateField('Data final da apresentação',  blank=True, null=True,
