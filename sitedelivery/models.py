@@ -166,7 +166,18 @@ class Produto(models.Model):
         ('GUARANA FANTA', 'GUARANA FANTA'),
         ('GUARANA KUAT', 'GUARANA KUAT'),
         ('FANTA LARANJA','REFRIGERANTE FANTA LARANJA'),
-        ('FANTA UVA', 'REFRIGERANTE FANTA UVA')
+        ('FANTA UVA', 'REFRIGERANTE FANTA UVA'),
+        ('CAJUINA NODESTINA','CAJUINA NODESTINA'),
+        ('CACHAÇA MAGUEIRA OURO','CACHAÇA MAGUEIRA OURO'),
+        ('CACHAÇA MAGUEIRA', 'CACHAÇA MAGUEIRA'),
+        ('VODKA SLOVA','VODKA SLOVA'),
+        ('VINHO PADRE CICERO', 'VINHO PADRE CICERO'),
+        ('VINHO QUINTO DO MORGADO', 'VINHO QUINTO DO MORGADO'),
+        ('VINHO GAUCHO', 'VINHO GAUCHO'),
+        ('GELO', 'GELO'),
+        ("CARVAO","CARVAO")
+
+
     )
     ordena_choices = sorted(BEBIDAS_CHOICES, key=lambda x: x[1])
     BEBIDAS_CHOICES = ordena_choices
@@ -182,7 +193,13 @@ class Produto(models.Model):
         ('Cerveja Dry Beer', 'Cerveja Dry Beer'),
         ('Refrigerante Cola', 'Refrigerante Cola'),
         ('Guarana', 'Guarana'),
-        ('Refrigerante', 'Refrigerante')
+        ('Refrigerante', 'Refrigerante'),
+        ('Cajuina','Cajuina'),
+        ('Cachaça','Cachaça'),
+        ('Vodka', 'Vodka'),
+        ('Vinho', 'Vinho'),
+        ('Gelo em cubos', 'Gelo em cubos'),
+        ('Carvao Vegetal','Carvao Vegetal')
 
     )
     ordena_choices = sorted(DESC_CHOICES, key=lambda x: x[1])
@@ -212,6 +229,13 @@ class Produto(models.Model):
         ('LATAO 473 ML', 'LATAO 473 ML'),
         ('LATAO 550 ML', 'LATA 550 ML'),
         ('PERIGUETE 300 ML', 'PERIGUETE 300 ML'),
+        ('GARRAFA 490 ML', 'GARRAFA 490 ML'),
+        ('GARRAFA 960 ML', 'GARRAFA 960 ML'),
+        ('GARRAFA 480 ML', 'GARRAFA 480 ML'),
+        ('GARRAFA 970 ML', 'GARRAFA 970 ML'),
+        ('GARRAFA 890 ML', 'GARRAFA 890 ML'),
+        ('GARRAFA 750 ML', 'GARRAFA 750 ML'),
+        ('GARRAFA 400 ML', 'GARRAFA 400 ML'),
 
     )
 
