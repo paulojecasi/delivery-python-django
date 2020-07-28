@@ -230,7 +230,7 @@ div#logo_cabecalho2 img#icone2{
 
 .corDeFundoPreco{
     background-color: rgba(255,255,255);         /** cor de fundo **/
-    height: 100%px ;                    /** altura do bloco **/
+    height: 200px ;                    /** altura do bloco **/
     width: 280px;                      /** largura **/
     border: 1px outset #DCDCDC;        /** borda e cor da borda **/
     border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
@@ -241,22 +241,23 @@ div#logo_cabecalho2 img#icone2{
     font-size: 21px;                          /** tamanho da fonte **/
     /** font-weight: bold;                        /** fonte em negrito **/
     color: #000;                              /** cor da fonte **/
+    line-height:16px;                          /** espaço entre as linhas **/
     text-align: center;
 }
 
-#pedBebidas ul li#fonte2{
-    line-height:2px;                          /** espaço entre as linhas **/
+#pedBebidas ul li#fonte2{/
+    line-height:17px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 
 }
 
 #pedBebidas ul li#fonte3{
-    line-height:27px;                          /** espaço entre as linhas **/
+    line-height:17px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 }
 
 #pedBebidas ul li#fonte4{
-    font-size: 25px;                          /** tamanho da fonte **/
+    font-size: 22px;                          /** tamanho da fonte **/
     /**font-weight: bold;                        /** fonte em negrito **/
     color: #000;                              /** cor da fonte **/
     line-height:30px;                          /** espaço entre as linhas **/
@@ -299,7 +300,7 @@ div#logo_cabecalho2 img#icone2{
 
 .corDeFundoPrecoCatalogo{
     background-color: rgba(255,255,255);         /** cor de fundo **/
-    height: 100%px ;                    /** altura do bloco **/
+    height: 120px ;                    /** altura do bloco **/
     width: 280px;                      /** largura **/
     border: 2px outset #DCDCDC;        /** borda e cor da borda **/
     border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
@@ -308,19 +309,20 @@ div#logo_cabecalho2 img#icone2{
 
 #catalogo ul li#fonte1{
     font-size: 21px;                          /** tamanho da fonte **/
+    line-height:15px;                          /** espaço entre as linhas **/
     /** font-weight: bold;                        /** fonte em negrito **/
     color: #000;                              /** cor da fonte **/
     text-align: center;
 }
 
 #catalogo ul li#fonte2{
-    line-height:2px;                          /** espaço entre as linhas **/
+    line-height:17px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 
 }
 
 #catalogo ul li#fonte3{
-    line-height:27px;                          /** espaço entre as linhas **/
+    line-height:17px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 }
 
@@ -541,7 +543,7 @@ div#logo_cabecalho2 img#icone2{
 
     .corDeFundoPreco{
         background-color: rgba(255,255,255);         /** cor de fundo **/
-        height: 200px ;                    /** altura do bloco **/
+        height: 190px ;                    /** altura do bloco **/
         width: 170px;                      /** largura **/
         border: 1px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 0px 0px 3px 3px;  /** arredondamento da borda **/
@@ -615,7 +617,7 @@ div#logo_cabecalho2 img#icone2{
 
     .corDeFundoPrecoCatalogo{
         background-color: rgba(255,255,255);         /** cor de fundo **/
-        height: 100%px ;                    /** altura do bloco **/
+        height: 120px ;                    /** altura do bloco **/
         width: 170px;                      /** largura **/
         border: 2px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 0px 0px 10px 10px;  /** arredondamento da borda **/
