@@ -162,11 +162,23 @@
                         <ul id="contato-menu">
                           <li> <a href="https://api.whatsapp.com/send?phone=5586995031198&text="ola%20SL%20Conveniencia">
                             Telefone/Whatsapp </br>
-                            9 9503 1198 </br>
+                            (86) 9 9503 1198 </br>
                             (Clique para enviar mensagem)
                             </a>
                           </li>
                         </ul>
+                    </li>
+
+                    <li> <a id="bairro-entrega" href = "#"> Entregas </a>
+                        <ul id="bairro-entregar">
+                          {% for BAIRRO_ENTREGA in BairroEntrega %}
+                          <li> <a>
+                                {{ BAIRRO_ENTREGA.bairro }}
+                               </a>
+                          </li>
+                          {% endfor %}
+                        </ul>
+
 
                     </li>
 

@@ -133,19 +133,32 @@ div#logo_cabecalho2 img#icone2{
 
 .menu ul ul li{
     width: 180px;
-    float: left;
+
 
 }
 
 .menu ul ul a{
-    color:#DAA520 ;
+    color:black;
+    width: 230px;
+    float: right;
     background-color: white; 
     text-decoration: none;
     list-style: none;
     border: 1px solid #DCDCDC;        /** borda e cor da borda **/
     border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
 
+}
 
+.menu ul ul#bairro-entregar a{
+
+    width: 260px;
+    float: right;
+    background-color: white; 
+    text-decoration: none;
+    list-style: none;
+    border: 1px solid #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
+    text-align: left;
 
 }
 
@@ -478,7 +491,6 @@ div#logo_cabecalho2 img#icone2{
                                 /*  abaixo   00px padding  */
                                 /*  esquerda 30px  padding  */
     }
-
 
 
     .menu{
