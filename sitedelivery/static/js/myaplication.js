@@ -58,54 +58,53 @@ function avisoSemEnderecoEntrega(){
     alert("Atenção! Cadastre um endereço de entrega!");
 }
 
-function botaoMaisUm(id){
-
- 
-    var _varTotal =0
-    var maisUm = document.getElementById(id).value
+function botaoMaisUm(id,vlUnitario){
+   alert(vlUnitario)
+    var _varTotal =0;
+    var totalDelivery =0;
+    var maisUm = document.getElementById("campoQuantidade"+id).value
     var maisUm =  parseFloat(maisUm) + 1
-    document.getElementById(id).value = maisUm
-
-
-    //var _varTotal = (document.getElementById("campoValorUnitario").value *
-       var _varTotal = (10 * document.getElementById(id).value)
-
-
-
+    document.getElementById("campoQuantidade"+id).value = maisUm
+   
+    _varTotal = (vlUnitario *
+                     document.getElementById("campoQuantidade"+id).value)
 
     //var _varTotal = document.getElementById("campoValorUnitario").value
     //alert(_varTotal)
+   
+    totalDelivery = (parseFloat(document.getElementById("valorTotalDelivery").value) + vlUnitario)
 
-
-    document.getElementById("campoTotal"+id).value = _varTotal
-
-    alert("AQUI "+document.getElementById("campoTotal"+id).value)
+    document.getElementById("campoTotal"+id).value = _varTotal;
+    document.getElementById("valorTotalDelivery").value =  totalDelivery;
 
 }
 
-function botaoMenosUm(id){
+function botaoMenosUm(id,vlUnitario){
 
-    var menosUm = document.getElementById(id).value;
+    var _varTotal =0;
+    var totalDelivery =0;
+    var menosUm = document.getElementById("campoQuantidade"+id).value;
     var menosUm =  menosUm - 1;
-    document.getElementById(id).value = menosUm;
+    document.getElementById("campoQuantidade"+id).value = menosUm;
 
-    var varTotal = (document.getElementById("campoValorUnitario").value *
-                    document.getElementById("campoQuantidade").value);
-
-    if (menosUm < 1) {
-        var menosUm = 1;
-        var varTotal = document.getElementById("campoValorUnitario").value;
-        document.getElementById("campoTotal").value = varTotal;
-       // document.getElementById("campoTotal2").value = varTotal;
-        document.getElementById("campoQuantidade").value = menosUm;
-        alert("Quantidade não pode ser ZERO!");
-
-    } else {
-        document.getElementById("campoTotal").value = varTotal
-
-        document.getElementById("campoTotal2").value = varTotal
-
+    if (menosUm <0) {
+        var menosUm =0;
+        document.getElementById("campoQuantidade"+id).value = menosUm; 
+        vlUnitario =0; 
+        alert("Quantidade não pode ser menos que 0 (ZERO)!");
     }
+
+    var varTotal = (vlUnitario *
+                    document.getElementById("campoQuantidade"+id).value);
+
+   
+    totalDelivery = 
+            (parseFloat(document.getElementById("valorTotalDelivery").value) - vlUnitario)
+
+    document.getElementById("campoTotal"+id).value = varTotal
+    document.getElementById("valorTotalDelivery").value =  totalDelivery;
+  
+    
 
 }
 

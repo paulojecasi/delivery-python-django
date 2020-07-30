@@ -112,6 +112,7 @@
                     Vendas e entregas de Cervejas
                 {% else %}
                     Catalogo de Produtos
+                    <p> Fazemos entregas a partir de 6 unidades </p>
                 {% endif %}
             </h3>
 
@@ -134,9 +135,14 @@
                 <!-- quando for smartfone pega 12 coluna, se nao, pega 5 -->
                 <div class = "carrinho-menu col-xs-12  col-md-5 " >
                   <h4> Valor da compra R$
-                  <input type="text" class="form-control" aria-label="Quantia"> </h4>
+                        <input type="text"
+                               class="form-control"
+                               aria-label="Quantia"
+                               id = "valorTotalDelivery"
+                               value ="0.00"
 
-
+                        >
+                  </h4>
                 </div>
               {% else %}
 
@@ -154,7 +160,12 @@
 
                     <li> <a id="contato" href = "#"> Contato </a>
                         <ul id="contato-menu">
-                          <li> <a href="https://api.whatsapp.com/send?phone=5586995031198&text="ola%20SL%20Conveniencia">  Telefone/Whatsapp </br>  (86) 9 9503 1198 </br> (Clique para enviar mensagem) </a></li>
+                          <li> <a href="https://api.whatsapp.com/send?phone=5586995031198&text="ola%20SL%20Conveniencia">
+                            Telefone/Whatsapp </br>
+                            9 9503 1198 </br>
+                            (Clique para enviar mensagem)
+                            </a>
+                          </li>
                         </ul>
 
                     </li>

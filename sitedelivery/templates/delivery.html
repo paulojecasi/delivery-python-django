@@ -42,21 +42,18 @@
 
                     </div>
                   </li>
+
+
                   <div class = "corDeFundoPreco">
+
                     <li id="fonte1"> {{PRODUTOS_DO_SITE.bebida}}      </li>
                     <li id="fonte2"> {{PRODUTOS_DO_SITE.complemento}} </li>
                     <li id="fonte3"> {{PRODUTOS_DO_SITE.tamanho}}     </li>
-                    <li id="fonte4"> R$  {{PRODUTOS_DO_SITE.valor}}
-                      <!--
-                      <a  class="botaoMaisUm"
-                        href =" "
-                        title="Colocar no carrinho!"> + 1 </a>
-                      <a  class="botaoMenosUm"
-                        href =" "
-                        title="Colocar no carrinho!"> - 1 </a>
-                        -->
+                    <li id="fonte4"> R$  {{PRODUTOS_DO_SITE.valor}}   </li>
 
-                    </li>
+
+                      <!-- Campo Invisivel -->
+
 
                     <!-- <h4 id="vl-total"> Totais</h4> -->
 
@@ -76,18 +73,21 @@
 
                             <button type="button"
                                     class="btn btn-warning"
-                                    onclick = "botaoMenosUm({{PRODUTOS_DO_SITE.id }})"
+                                    onclick = "botaoMenosUm({{PRODUTOS_DO_SITE.id}},
+                                                            {{PRODUTOS_DO_SITE.valor}})"
                             >-1</button>
+
 
                             <input  type="text"
                                     class="form-control"
                                     aria-label="Quantia"
-                                    id="{{PRODUTOS_DO_SITE.id}}"
+                                    id="campoQuantidade{{PRODUTOS_DO_SITE.id}}"
                                     value = "0">
 
                             <button type="button"
                                     class="btn btn-success"
-                                    onclick = "botaoMaisUm({{PRODUTOS_DO_SITE.id}})"
+                                    onclick = "botaoMaisUm({{PRODUTOS_DO_SITE.id}},
+                                                           {{PRODUTOS_DO_SITE.valor}})"
                             >+1</button>
 
 
@@ -121,19 +121,24 @@
                       </div>
 
 
+                      <script>
+                          $(document).ready(function(){
+                              $('#campoTotal{{PRODUTOS_DO_SITE.id}}').mask('000,000.00');
+                          });
+                      </script>
+
+
                       <div class="input-group mb-3" id="campoTotalBoot">
                         <div class="input-group-prepend">
-                          <span class="input-group-text" id="col-form-label-sm">Total R$</span>
+                          <span class="input-group-text"
+                                id="col-form-label-sm">Total R$</span>
                         </div>
 
                         <input type="text"
                                class="form-control"
                                aria-label="Quantia"
-
-                               {% with input_name="campoTotal"|add:PRODUTOS_DO_SITE.id %}
-                                   {% render_field modifier.campoTotal
-                                    name=input_name %}
-                               {% endwith %}
+                               id="campoTotal{{PRODUTOS_DO_SITE.id}}"
+                               value="0.00"
                         >
 
                       </div>

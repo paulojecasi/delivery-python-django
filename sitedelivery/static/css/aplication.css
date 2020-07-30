@@ -25,7 +25,7 @@ header#cabecalho h1{
     color: rgba(255,255,255);
     position: absolute;
     left:230px;
-    top:10px;
+    top:1px;
 
 
     text-shadow: 2px 2px 2px rgba(0,0,0,.6);
@@ -46,7 +46,12 @@ header#cabecalho h3{
 
 header#cabecalho h3#sub1{                     /** posicao sub titulo 1 **/
     left:230px;
-    top:60px;
+    top:50px;
+}
+
+header#cabecalho h3#sub1 p{                     /** posicao sub titulo 1 **/
+     font-size: 17px;
+     top:40px;
 }
 
 header#cabecalho h3#sub2{                    /** posicao sub titulo 2 **/
@@ -182,12 +187,16 @@ div#logo_cabecalho2 img#icone2{
 
  
     font-weight: bold;                     /** fonte em negrito **/
-    color: #fff;
+    color: white;
+    background-color: #708090;
+    text-align: right;
     width:210px;
     height:30px;
     position: absolute;
     right: 10px;
     top: 5px;
+    pointer-events:none;
+    outline:none;
 
 }
 
@@ -388,6 +397,11 @@ div#logo_cabecalho2 img#icone2{
 
 #inputTotais input{
     height:27px;
+    font: bold 19px/24px arial, helvetica, sans-aerif;
+    text-align:center;
+    pointer-events:none;
+    outline:none;
+   
 }
 
 #campoQtdBoot{
@@ -446,15 +460,23 @@ div#logo_cabecalho2 img#icone2{
 
     header#cabecalho h1 {
         left:120px;
-        top:10px;
+        top:5px;
         font-size: 20px;
 
     }
 
     header#cabecalho h3#sub1 {
         left:120px;
-        top:43px;
-        font-size: 13px;
+        top:31px;
+        font-size: 16px;
+    }
+
+    header#cabecalho h3#sub1 p{                     /** posicao sub titulo 1 **/
+        font-size: 12px;
+        padding: 5px 0px 0px 0px;   /*  acima    50px  padding  */
+                                /*  direita  0px  padding  */
+                                /*  abaixo   00px padding  */
+                                /*  esquerda 30px  padding  */
     }
 
 
