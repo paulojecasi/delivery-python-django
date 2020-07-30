@@ -144,8 +144,8 @@ div#logo_cabecalho2 img#icone2{
     background-color: white; 
     text-decoration: none;
     list-style: none;
-    border: 1px solid #DCDCDC;        /** borda e cor da borda **/
-    border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
+    border: 1px solid #B8860B;        /** borda e cor da borda **/
+    border-radius: 2px 0px 2px 0px;  /** arredondamento da borda **/
 
 }
 
@@ -156,8 +156,7 @@ div#logo_cabecalho2 img#icone2{
     background-color: white; 
     text-decoration: none;
     list-style: none;
-    border: 1px solid #DCDCDC;        /** borda e cor da borda **/
-    border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
+
     text-align: left;
 
 }
@@ -171,11 +170,9 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
-
 .menu ul li:hover ul{  
     visibility: visible;
     background-color: white; 
-
 }
 
 
