@@ -57,6 +57,7 @@ class Bairro(models.Model):
     class Meta:
         verbose_name = '4  Cadastro de Bairro'
         verbose_name_plural = '4  Cadastro de Bairros'
+        ordering = ["bairro"]
 
 
 class Cliente(models.Model):
