@@ -298,21 +298,21 @@ div#logo_cabecalho2 img#icone2{
 }
 
 #pedBebidas ul li#fonte1{
-    font-size: 21px;                          /** tamanho da fonte **/
+    font-size: 18px;                          /** tamanho da fonte **/
     /** font-weight: bold;                        /** fonte em negrito **/
     color: #000;                              /** cor da fonte **/
-    line-height:16px;                          /** espaço entre as linhas **/
+    line-height:20px;                          /** espaço entre as linhas **/
     text-align: center;
 }
 
 #pedBebidas ul li#fonte2{/
-    line-height:17px;                          /** espaço entre as linhas **/
+    line-height:14px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 
 }
 
 #pedBebidas ul li#fonte3{
-    line-height:17px;                          /** espaço entre as linhas **/
+    line-height:14px;                          /** espaço entre as linhas **/
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 }
 
@@ -369,7 +369,7 @@ div#logo_cabecalho2 img#icone2{
 
 #catalogo ul li#fonte1{
     font-size: 21px;                          /** tamanho da fonte **/
-    line-height:15px;                          /** espaço entre as linhas **/
+    line-height:20px;                          /** espaço entre as linhas **/
     /** font-weight: bold;                        /** fonte em negrito **/
     color: #000;                              /** cor da fonte **/
     text-align: center;
@@ -485,6 +485,18 @@ div#logo_cabecalho2 img#icone2{
     width:70px;
     height:27px;
 
+}
+
+.btn-seleciona{
+    font-size: 13px;      
+    width:130px;
+    position: relative;
+    top: -8px;
+    margin-left: 75px;
+    text-align: center;
+    border: 5px outset #DCDCDC;        /** borda e cor da borda **/
+    border-radius: 5px 5px 5px 5px;  /** arredondamento da borda **/
+      
 }
 
 
@@ -627,7 +639,7 @@ div#logo_cabecalho2 img#icone2{
 
 
     .cor-de-fundo-imagem{
-        height: 185px ;                    /** altura do bloco **/
+        height: 160px ;                    /** altura do bloco **/
         width: 170px;                       /** largura **/
         border: 1px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 15px 15px 0px 0px;  /** arredondamento da borda **/
@@ -639,8 +651,8 @@ div#logo_cabecalho2 img#icone2{
 
     .imagemProduto{
 
-        height: 173px ;                    /** altura do bloco **/
-        width: 166px;                       /** largura **/
+        height: 159px ;                    /** altura do bloco **/
+        width: 160px;                       /** largura **/
         padding: 5px 5px 5px 5px;   /*  acima    50px  padding  */
                                 /*  direita  0px  padding  */
                                 /*  abaixo   00px padding  */
@@ -650,18 +662,18 @@ div#logo_cabecalho2 img#icone2{
 
     .corDeFundoPreco{
         background-color: rgba(255,255,255);         /** cor de fundo **/
-        height: 190px ;                    /** altura do bloco **/
+        height: 195px ;                    /** altura do bloco **/
         width: 170px;                      /** largura **/
         border: 1px outset #DCDCDC;        /** borda e cor da borda **/
         border-radius: 0px 0px 3px 3px;  /** arredondamento da borda **/
-        font-size: 15px;                          /** tamanho da fonte **/
+        font-size: 13px;                          /** tamanho da fonte **/
 
 
 
     }
 
     #pedBebidas ul li#fonte1{
-        font-size: 17px;                          /** tamanho da fonte **/
+        font-size: 15px;                          /** tamanho da fonte **/
         /** font-weight: bold;                        /** fonte em negrito **/
         color: #000;                              /** cor da fonte **/
         text-align: center;
@@ -681,10 +693,10 @@ div#logo_cabecalho2 img#icone2{
     }
 
     #pedBebidas ul li#fonte4{
-        font-size: 22px;                          /** tamanho da fonte **/
+        font-size: 20px;                          /** tamanho da fonte **/
         /**font-weight: bold;                        /** fonte em negrito **/
         color: #000;                              /** cor da fonte **/
-        line-height:30px;                          /** espaço entre as linhas **/
+        line-height:20px;                          /** espaço entre as linhas **/
         padding-left:10px;                       /** espaço da borda e texto a esquerda **/
     }
 
@@ -769,6 +781,14 @@ div#logo_cabecalho2 img#icone2{
     }
 
 
+    #inputTotais{
+        position: relative;
+        margin-top: -6px;
+        left: 2px;
+
+    }
+
+
     #botoesTot{
 
         font: bold 20px/24px arial, helvetica, sans-aerif;
@@ -791,12 +811,7 @@ div#logo_cabecalho2 img#icone2{
     }
 
 
-    #inputTotais{
-        position: relative;
-        bottom: 5px;
-        left: 2px;
-
-    }
+    
 
     #campoQtdBoot{
 
@@ -829,8 +844,21 @@ div#logo_cabecalho2 img#icone2{
 
         width:160px;
         margin-left: 1px;
+        margin-top: -6px;
 
 
+    }
+
+    .btn-seleciona{
+        font-size: 13px;      
+        width:130px;
+        position: relative;
+        top: -8px;
+        margin-left: 17px;
+        text-align: center;
+        border: 5px outset #DCDCDC;        /** borda e cor da borda **/
+        border-radius: 4px 4px 4px 4px;  /** arredondamento da borda **/
+      
     }
 
     
