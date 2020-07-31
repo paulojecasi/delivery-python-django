@@ -235,7 +235,7 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
-#cor-de-fundo-imagem{
+.cor-de-fundo-imagem{
     height: 160px ;                    /** altura do bloco **/
     width: 280px;                       /** largura **/
     border: 1px outset #DCDCDC;        /** borda e cor da borda **/
@@ -254,7 +254,7 @@ div#logo_cabecalho2 img#icone2{
 }
 
 .corDeFundoPreco{
-    background-color: rgba(255,255,255);         /** cor de fundo **/
+    background-color: white;         /** cor de fundo **/
     height: 200px ;                    /** altura do bloco **/
     width: 280px;                      /** largura **/
     border: 1px outset #DCDCDC;        /** borda e cor da borda **/
@@ -305,7 +305,7 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
-#cor-de-fundo-imagem-catalogo{
+.cor-de-fundo-imagem-catalogo{
     height: 190px ;                    /** altura do bloco **/
     width: 280px;                       /** largura **/
     border: 2px outset #DCDCDC;        /** borda e cor da borda **/
@@ -560,7 +560,7 @@ div#logo_cabecalho2 img#icone2{
     }
 
 
-    #cor-de-fundo-imagem{
+    .cor-de-fundo-imagem{
         height: 185px ;                    /** altura do bloco **/
         width: 170px;                       /** largura **/
         border: 1px outset #DCDCDC;        /** borda e cor da borda **/
@@ -575,6 +575,10 @@ div#logo_cabecalho2 img#icone2{
 
         height: 173px ;                    /** altura do bloco **/
         width: 166px;                       /** largura **/
+        padding: 5px 5px 5px 5px;   /*  acima    50px  padding  */
+                                /*  direita  0px  padding  */
+                                /*  abaixo   00px padding  */
+                                /*  esquerda 30px  padding  */
     
     }
 
@@ -635,7 +639,7 @@ div#logo_cabecalho2 img#icone2{
 
     }
 
-    #cor-de-fundo-imagem-catalogo{
+    .cor-de-fundo-imagem-catalogo{
         height: 185px ;                    /** altura do bloco **/
         width: 170px;                       /** largura **/
         border: 2px outset #DCDCDC;        /** borda e cor da borda **/

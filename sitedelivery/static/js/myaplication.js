@@ -58,6 +58,7 @@ function avisoSemEnderecoEntrega(){
     alert("Atenção! Cadastre um endereço de entrega!");
 }
 
+
 function botaoMaisUm(id,vlUnitario){
 
     var _varTotal =0;
@@ -76,6 +77,15 @@ function botaoMaisUm(id,vlUnitario){
 
     document.getElementById("campoTotal"+id).value = _varTotal;
     document.getElementById("valorTotalDelivery").value =  totalDelivery;
+
+
+    if (maisUm > 0){
+        document.getElementById("corDeFundoPreco"+id).
+                style.backgroundColor= "#90EE90";
+        document.getElementById("cor-de-fundo-imagem"+id).
+                style.backgroundColor= "#90EE90";
+
+    }
 
 }
 
@@ -104,6 +114,12 @@ function botaoMenosUm(id,vlUnitario){
     document.getElementById("campoTotal"+id).value = varTotal
     document.getElementById("valorTotalDelivery").value =  totalDelivery;
   
+    if (menosUm < 1){
+        document.getElementById("corDeFundoPreco"+id).
+                style.backgroundColor= "white";
+        document.getElementById("cor-de-fundo-imagem"+id).
+                style.backgroundColor= "white"; 
+    }
     
 
 }

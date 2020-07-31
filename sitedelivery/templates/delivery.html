@@ -30,7 +30,8 @@
 
                 <ul style="list-style-type: none;" class="ladoALado">
                   <li>
-                    <div id="cor-de-fundo-imagem">
+                    <div class="cor-de-fundo-imagem"
+                          id ="cor-de-fundo-imagem{{PRODUTOS_DO_SITE.id}}"  >
                       {% if PRODUTOS_DO_SITE.foto %}
                         <img class = "imagemProduto"
                           src =" {{PRODUTOS_DO_SITE.foto.url}} " />
@@ -44,7 +45,7 @@
                   </li>
 
 
-                  <div class = "corDeFundoPreco">
+                  <div class = "corDeFundoPreco" id="corDeFundoPreco{{PRODUTOS_DO_SITE.id}}">
 
                     <li id="fonte1"> {{PRODUTOS_DO_SITE.bebida}}      </li>
                     <li id="fonte2"> {{PRODUTOS_DO_SITE.complemento}} </li>
