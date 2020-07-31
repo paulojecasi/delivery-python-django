@@ -532,11 +532,10 @@ div#logo_cabecalho2 img#icone2{
 
 
     .menu{
-        height: 33px;
+        height: 34px;
         border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
         font-size: 16px;
 
- 
     }
 
 
@@ -556,7 +555,7 @@ div#logo_cabecalho2 img#icone2{
 
         border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
         height: 25px;                    /** fonte em negrito **/
-        padding: 2px;
+        padding: 3px;
 
     }
 
@@ -579,7 +578,7 @@ div#logo_cabecalho2 img#icone2{
     }
 
     .carrinho-menu-qtd{
-        background-color:#1C1C1C;
+        background-color: #2F4F4F;
         height: 25px;                    /** fonte em negrito **/
         color: #fff;
         padding: 3px;
@@ -599,7 +598,7 @@ div#logo_cabecalho2 img#icone2{
         color: black;
         background-color: white;
         text-align: right;
-        width:100px;
+        width:140px;
         height:23px;
         position: absolute;
         right: 10px;
@@ -612,7 +611,7 @@ div#logo_cabecalho2 img#icone2{
     }
 
     .tela-itens{
-        padding: 130px;
+        padding: 145px;
 
     }
 
