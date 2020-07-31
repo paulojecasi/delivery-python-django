@@ -532,7 +532,7 @@ div#logo_cabecalho2 img#icone2{
 
 
     .menu{
-        height: 25px;
+        height: 33px;
         border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
         font-size: 16px;
 
@@ -546,7 +546,7 @@ div#logo_cabecalho2 img#icone2{
     }
 
     .menu a{
-        padding: 0px;
+        padding: 5px;
         text-align: center;
         border-radius: 0px 0px 0px 0px; 
  
@@ -582,7 +582,7 @@ div#logo_cabecalho2 img#icone2{
         background-color:#1C1C1C;
         height: 25px;                    /** fonte em negrito **/
         color: #fff;
-        padding: 2px;
+        padding: 3px;
 
 
     }
