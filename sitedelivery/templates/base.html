@@ -69,8 +69,8 @@
                 {% if Tipo == "delivery" %}
                     Vendas e entregas de Cervejas
                 {% else %}
-                    Catalogo de Produtos
-                    <p> Delivery a partir de 6 unidades </p>
+                    Delivery a partir de 6 unidades
+
                 {% endif %}
             </h3>
 
@@ -79,7 +79,7 @@
                 <!-- quando for smartfone pega 12 coluna, se nao, pega 7 -->
               {% if Tipo == "delivery" %}
 
-                <nav class = "menu col-xs-12  col-md-7" >
+                <nav class = "menu col-xs-12  col-md-4" >
                   <ul>
                     <li> <a id="inicio" href = "#"> Inicio </a></li>
                     <li> <a id="entrega" href = "#" > Entrega </a></li>
@@ -87,11 +87,22 @@
                   </ul>
                 </nav>
 
+                <!-- quando for smartfone pega 12 coluna, se nao, pega 5 -->
+                <div class = "carrinho-menu-qtd col-xs-12  col-md-4 " >
+                  <h4> Qtd Produtos Selecionados
+                        <input type="text"
+                               class="form-control"
+                               aria-label="Quantia"
+                               id = "qtTotalDelivery"
+                               value ="0.00"
 
+                        >
+                  </h4>
+                </div>
 
 
                 <!-- quando for smartfone pega 12 coluna, se nao, pega 5 -->
-                <div class = "carrinho-menu col-xs-12  col-md-5 " >
+                <div class = "carrinho-menu col-xs-12  col-md-4 " >
                   <h4> Valor da compra R$
                         <input type="text"
                                class="form-control"
