@@ -86,39 +86,37 @@ div#logo_cabecalho2 img#icone2{
 .menu{
     background-color:  #B8860B;
     height: 40px;
-    font-family: 'Arial';
     font-size: 17px;
-    font-weight: bold;                     /** fonte em negrito **/
-
+    font-family: Arial, sans-serif;
 
 
 }
 
-.menu ul {
-    list-style: none;
-    position: relative;
-
+.menu ul{
+    margin-left: -55px;
 
 }
 
 .menu ul li{
-    width: 120px;
+    list-style: none;
+    width: 100px;
     float: left;
-
+ 
 }
 
 .menu a{
+
     padding: 6px;
     display: block;
     text-decoration: none;
     text-align: center;
     background-color: #B8860B; 
     color: #fff;
-    border-right:2px solid #DAA520;
-    border-left:2px solid #DAA520;
+    border-right:1px solid #DAA520;
+    border-left:1px solid #DAA520;
+
 
 }
-
 
 
 .menu a:hover{    
@@ -127,20 +125,20 @@ div#logo_cabecalho2 img#icone2{
     text-decoration: none;
     list-style: none;
     border: 1px solid #DCDCDC;        /** borda e cor da borda **/
-    border-radius: 5px 0px 5px 0px;  /** arredondamento da borda **/
+    border-radius: 2px 0px 2px 0px;  /** arredondamento da borda **/
     
 }
 
 .menu ul ul li{
     width: 180px;
-
+    font-size: 16px;
 
 }
 
 .menu ul ul a{
     color:black;
     width: 230px;
-    float: right;
+    float: left;
     background-color: white; 
     text-decoration: none;
     list-style: none;
@@ -149,14 +147,22 @@ div#logo_cabecalho2 img#icone2{
 
 }
 
+.menu ul ul#endereco-menu a{
+
+    width: 220px;
+    float: left;
+    text-align: center;
+    margin-left: 55px;
+
+}
+
 .menu ul ul#bairro-entregar a{
 
-    width: 260px;
+    width: 230px;
     float: right;
     background-color: white; 
     text-decoration: none;
     list-style: none;
-
     text-align: left;
 
 }
@@ -167,12 +173,11 @@ div#logo_cabecalho2 img#icone2{
     visibility: hidden;
     padding: 2px;
 
-
 }
 
 .menu ul li:hover ul{  
     visibility: visible;
-    background-color: white; 
+
 }
 
 
@@ -494,7 +499,7 @@ div#logo_cabecalho2 img#icone2{
     .menu{
         height: 35px;
         border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
-        font-size: 13px;
+        font-size: 15px;
 
  
     }
@@ -506,7 +511,7 @@ div#logo_cabecalho2 img#icone2{
     }
 
     .menu a{
-        padding: 7px;
+        padding: 5px;
         text-align: center;
         border-radius: 0px 0px 0px 0px; 
  

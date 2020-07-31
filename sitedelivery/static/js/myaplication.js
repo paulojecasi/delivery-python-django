@@ -59,7 +59,7 @@ function avisoSemEnderecoEntrega(){
 }
 
 function botaoMaisUm(id,vlUnitario){
-   alert(vlUnitario)
+
     var _varTotal =0;
     var totalDelivery =0;
     var maisUm = document.getElementById("campoQuantidade"+id).value
