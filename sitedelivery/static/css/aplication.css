@@ -94,7 +94,7 @@ div#logo_cabecalho2 img#icone2{
 
 .menu ul li{
     list-style: none;
-    width: 100px;
+    width: 130px;
     float: left;
  
 }
@@ -174,6 +174,12 @@ div#logo_cabecalho2 img#icone2{
     visibility: visible;
 
 }
+
+#ender, #bt-wz, #entr{
+    width:18px;
+
+}
+
 
 
 
@@ -551,13 +557,13 @@ div#logo_cabecalho2 img#icone2{
     .menu{
         height: 34px;
         border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
-        font-size: 16px;
+        font-size: 15px;
 
     }
 
 
     .menu ul li{
-        width: 90px;
+        width: 110px;
 
     }
 
@@ -567,7 +573,7 @@ div#logo_cabecalho2 img#icone2{
         border-radius: 0px 0px 0px 0px; 
  
     }
-
+    
     .carrinho-menu{
 
         border-radius: 0px 0px 0px 0px;  /** arredondamento da borda **/
@@ -587,7 +593,7 @@ div#logo_cabecalho2 img#icone2{
         font-weight: bold;                     /** fonte em negrito **/
         color: black;
         width:140px;
-        height:23px;s
+        height:23px;
         position: absolute;
         right: 10px;
         top: 1px;

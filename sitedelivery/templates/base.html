@@ -111,10 +111,15 @@
 
                 <nav class = "menu col-xs-12  col-md-12" >
                   <ul>
-                    <li> <a id="endereco" href = "#"> Endereço </a>
+                    <li> <a id="endereco" href = "#">
+                            <img id = "ender" src= {% static 'css/icons/endereco.png' %} />
+                            Endereço
+                        </a>
                         <ul id="endereco-menu">
                           <li>
                             <a>
+                              <img src= {% static 'css/icons/endereco.png' %} />
+
                               Quadra 31, Casa 40. </br>
                               Conj Manoel Evangelista II. </br>
                               Bairro Novo Horizonte
@@ -124,7 +129,10 @@
 
                     </li>
 
-                    <li> <a id="contato" href = "#"> Contato </a>
+                    <li>  <a id="contato" href = "#">
+                            <img id = "bt-wz"  src= {% static 'css/icons/wz.png' %} />
+                            Contato
+                          </a>
                         <ul id="contato-menu">
                           <li>
                             <a href="https://api.whatsapp.com/send?phone=5586995031198&text="ola%20SL%20Conveniencia">
@@ -132,14 +140,17 @@
                                   (86) 9 9503 1198 </br>
                                   <button type="button" class="btn btn-success">
                                     Clique aqui para </br> enviar mensagem!
-                                    <img id = "bt-wz"  src= {% static 'css/icons/wz.png' %} />
+                                    <img src= {% static 'css/icons/wz.png' %} />
                                   </button>
                             </a>
                           </li>
                         </ul>
                     </li>
 
-                    <li> <a id="bairro-entrega" href = "#"> Entregas </a>
+                    <li>  <a id="bairro-entrega" href = "#">
+                            <img id = "entr"  src= {% static 'css/icons/entrega.png' %} />
+                            Entregas
+                          </a>
                         <ul id="bairro-entregar">
                           {% for BAIRRO_ENTREGA in BairroEntrega %}
                           <li> <a>
