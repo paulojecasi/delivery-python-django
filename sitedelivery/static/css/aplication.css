@@ -167,7 +167,6 @@ div#logo_cabecalho2 img#icone2{
     position: absolute;
     visibility: hidden;
     padding: 2px;
-
 }
 
 .menu ul li:hover ul{  
@@ -185,14 +184,12 @@ div#logo_cabecalho2 img#icone2{
     color: #fff;
     padding: 5px;
 
-
 }
 
 .carrinho-menu h4{
 
     font-size: 14px;
     color: #fff;
-
 }
 
 .carrinho-menu input{
