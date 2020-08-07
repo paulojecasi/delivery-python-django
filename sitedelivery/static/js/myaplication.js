@@ -79,6 +79,10 @@ function botaoMaisUm(id,vlUnitario){
     document.getElementById("valorTotalDelivery").value =  totalDelivery;
 
 
+    alteraVirgula(id)
+
+
+    /**
     if (maisUm > 0){
         document.getElementById("corDeFundoPreco"+id).
                 style.backgroundColor= "#90EE90";
@@ -86,6 +90,7 @@ function botaoMaisUm(id,vlUnitario){
                 style.backgroundColor= "#90EE90";
 
     }
+    **/
 
 }
 
@@ -113,23 +118,27 @@ function botaoMenosUm(id,vlUnitario){
 
     document.getElementById("campoTotal"+id).value = varTotal
     document.getElementById("valorTotalDelivery").value =  totalDelivery;
+    alteraVirgula(id);
+    
   
+    /**
     if (menosUm < 1){
         document.getElementById("corDeFundoPreco"+id).
                 style.backgroundColor= "white";
         document.getElementById("cor-de-fundo-imagem"+id).
                 style.backgroundColor= "white"; 
     }
+    **/
     
-
 }
 
-function alteraVirgula(){
-    document.getElementById("latitudeEnt").value = 
-            document.getElementById("latitudeEnt").value.replace(",", ".")
-    document.getElementById("longitudeEnt").value = 
-            document.getElementById("longitudeEnt").value.replace(",", ".")
-  
+function alteraVirgula(id){
+    document.getElementById("valor_unitario"+id).value = 
+            document.getElementById("valor_unitario"+id).value.replace(",", ".")
+
+    document.getElementById("campoTotal"+id).value = 
+            document.getElementById("campoTotal"+id).value.replace(",", ".")
+    
 }
 
 

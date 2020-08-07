@@ -3,6 +3,7 @@
 
 {% load static %}
 
+
       <div class="row">
           <!-- quando for smartfone pega 12 coluna, se nao, pega 12 -->
         <div class = "tela-itens col-md-12 col-xs-12">
@@ -25,11 +26,11 @@
                 estoque com os melhores produtos para lhe atender bem! </h4>
           {% endif %}
 
-            <div id="pedBebidas">
-              {% for PRODUTOS_DO_SITE in ProdutosDoSite %}
+          <div id="pedBebidas">
+            {% for PRODUTOS_DO_SITE in ProdutosDoSite %}
 
-                <ul style="list-style-type: none;" class="ladoALado">
-                  <li>
+              <ul style="list-style-type: none;" class="ladoALado">
+                <li>
                     <div class="cor-de-fundo-imagem"
                           id ="cor-de-fundo-imagem{{PRODUTOS_DO_SITE.id}}"  >
                       {% if PRODUTOS_DO_SITE.foto %}
@@ -42,9 +43,12 @@
                       {% endif %}
 
                     </div>
-                  </li>
+                </li>
 
-
+                <form  class="formGravaItem"
+                       action="{% url 'adicionaItem' PRODUTOS_DO_SITE.id %}"
+                       method="POST">
+                   {% csrf_token %}
                   <div class = "corDeFundoPreco" id="corDeFundoPreco{{PRODUTOS_DO_SITE.id}}">
 
                     <div class = "fontes-descricao-item">
@@ -52,6 +56,7 @@
                       <li id="fonte2"> {{PRODUTOS_DO_SITE.complemento}} </li>
                       <li id="fonte3"> {{PRODUTOS_DO_SITE.tamanho}}     </li>
                       <li id="fonte4"> R$  {{PRODUTOS_DO_SITE.valor}}   </li>
+
 
                     </div>
 
@@ -83,10 +88,12 @@
 
 
                             <input  type="text"
+                                    name = "quantidade"
                                     class="form-control"
                                     aria-label="Quantia"
                                     id="campoQuantidade{{PRODUTOS_DO_SITE.id}}"
-                                    value = "0">
+                                    value = "0"
+                            >
 
                             <button type="button"
                                     class="btn btn-success"
@@ -99,38 +106,21 @@
                           </div>
                         </div>
 
-
-                        <!-- AQUI SOH VAI APARECER EM SMART FONE
-                        <div class = "d-block d-md-none">
-                          <div class="input-group mb-3" id="campoQtdBoot2">
-                            <button type="button"
-                                    class="btn btn-success"
-                                    onclick = "botaoMaisUm({{PRODUTOS_DO_SITE.id}})"
-                            >+1</button>
-
-                            <input type="text"
-                                     class="form-control "
-                                     aria-label="Quantia"
-                                     value = "0"
-                                     id="{{PRODUTOS_DO_SITE.id}}">
-
-                            <button type="button"
-                                    class="btn btn-warning"
-                                    onclick = "botaoMenosUm({{PRODUTOS_DO_SITE.id }})">-1</button>
-                          </div>
-                        </div>
-                        -->
-
-
                       </div>
 
+                      <!--
+                      <input  type="number"
+                                name = "valor_unitario"
+                                class="valor-unitario"
+                                id="valor_unitario{{PRODUTOS_DO_SITE.id}}"
+                                value = "{{PRODUTOS_DO_SITE.valor}}"
+                      >
+                      -->
 
-                      <script>
-                          $(document).ready(function(){
-                              $('#campoTotal{{PRODUTOS_DO_SITE.id}}').mask('000,000.00');
-                          });
-                      </script>
-
+                      <input type="text" class="valor-unitario" aria-label="Quantia"
+                              value = "{{PRODUTOS_DO_SITE.valor}}"
+                              name = "valor_unitario"
+                              id="valor_unitario{{PRODUTOS_DO_SITE.id}}">
 
                       <div class="input-group mb-3" id="campoTotalBoot">
                         <div class="input-group-prepend">
@@ -139,6 +129,7 @@
                         </div>
 
                         <input type="text"
+                               name = "valor_total_item"
                                class="form-control"
                                aria-label="Quantia"
                                id="campoTotal{{PRODUTOS_DO_SITE.id}}"
@@ -148,26 +139,25 @@
                       </div>
 
 
-
                     </div>
-                    <button
-                            type="button"
+
+
+                      <button
+                            type="submit"
                             class="btn-seleciona btn-outline-success">
                             Selecionar Item
-                    </button>
+                      </button>
+
+
                   </div>
+                </form>
 
-                </ul>
-
-
-
-
-              {% endfor %}
-            </div>
+              </ul>
+            {% endfor %}
+          </div>
 
         </div>
 
       </div>
 
-    </div>
 {% endblock %}

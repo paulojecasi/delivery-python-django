@@ -175,6 +175,7 @@ div#logo_cabecalho2 img#icone2{
 
 #ender, #bt-wz, #entr{
     width:20px;
+
 }
 
 
@@ -328,7 +329,6 @@ div#logo_cabecalho2 img#icone2{
     padding-left:10px;                       /** espaço da borda e texto a esquerda **/
 }
 
-
 .tela-itens-catalogo{
     background-color:  #FFFFE0;
     padding: 120px;
@@ -435,7 +435,6 @@ div#logo_cabecalho2 img#icone2{
 }
 
 
-
 #inputTotais{
     position: relative;
     bottom: 5px;
@@ -503,6 +502,13 @@ div#logo_cabecalho2 img#icone2{
       
 }
 
+
+.valor-unitario{
+    display:none;
+    font-size: 14px;
+    width:100px;
+    height:27px;
+}
 
 
 

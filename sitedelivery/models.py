@@ -248,13 +248,13 @@ class Produto(models.Model):
         ('NAO', 'NAO')
     )
 
-    site = models.CharField(max_length=3, verbose_name='Para apresentação no site?',
+    site = models.CharField(max_length=3, verbose_name='Apresentar no site?',
                             default="SIM", choices=PARAOSITE,
                             help_text='Informe se o produto vai aparecer no site')
     bebida = models.CharField(max_length=100, verbose_name='Bebida', choices=BEBIDAS_CHOICES,
                               help_text='Selecione o produto')
     complemento = models.CharField(max_length=200, blank=True, null=True,
-                                   verbose_name='Descrição Complementar',
+                                   verbose_name='Complemento',
                                    help_text='Complemento de informações do produto',
                                    choices=DESC_CHOICES)
     tamanho = models.CharField(max_length=100, verbose_name='Tamanho', choices=TAMANHO_CHOICES,
@@ -273,7 +273,7 @@ class Produto(models.Model):
                                  auto_now=False)
 
     def __str__(self):
-        return self.bebida +  " " + self.tamanho + "  " + self.complemento + ",    Site: " + self.site
+        return self.bebida +  " " + self.tamanho + "  " + self.complemento
 
     class Meta:
         ordering = ['bebida']
@@ -322,6 +322,9 @@ class Carrinho(models.Model):
         verbose_name='Situação do carrinho',
         choices=SITUACAO_CARRINHO_BEB
     )
+
+
+
 
 class Pedido(models.Model):
     TIPO_PEDIDO = (

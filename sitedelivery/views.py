@@ -67,14 +67,26 @@ def Catalogo(request):
             return render(request, 'siteNaoDisponivel.html', dados)
 
 
-def Administracao(request):
+def adicionaItem(request,id):
 
-    ola = "OLA"
+    if request.method == 'POST':
+        itemDopedido = Produto.objects.get(id=id)
 
-    dados = {
-        'Ola': ola
 
-    }
+        carrinhoAdd = Carrinho();
 
-    return render(request, 'administracao.html', dados)
+        carrinhoAdd.produto = itemDopedido;
+        carrinhoAdd.valor_unitario = request.POST.get('valor_unitario');
+        carrinhoAdd.quantidade = request.POST.get('quantidade');
+        carrinhoAdd.valor_total_item = request.POST.get('valor_total_item');
+        carrinhoAdd.situacao_carrinho = 0;
+
+        carrinhoAdd.save()
+
+        messages.success(request, 'Item foi adicionado no carrinho')
+        return redirect('delivery')
+
+
+
+
 

@@ -16,6 +16,7 @@ from .models import(
 
 class ProdutoAdmin(admin.ModelAdmin):
     #fields = ('cidade', 'estado')                  #-campos p/ aparecer no cadastro
+    list_display = ('bebida','tamanho','site','valor')             # -campos p/ aparecer no cadastro
     list_filter = ('bebida','site')               #-adc um filtro na tela
     search_fields = ('bebida','site')             #-cria um campo de busca
 
@@ -37,12 +38,16 @@ class LiberaAdmin(admin.ModelAdmin):
     list_filter = ('pagina','libera','link')               #-adc um filtro na tela
     search_fields = ('pagina','libera','link')             #-cria um campo de busca
 
+class CarrinhoAdmin(admin.ModelAdmin):
+    list_display = ('produto','id','valor_unitario','quantidade','valor_total_item')
+
+
 
 admin.site.register(Cliente)
 admin.site.register(Pedido)
 admin.site.register(Entrega)
 admin.site.register(Produto,ProdutoAdmin)
-admin.site.register(Carrinho)
+admin.site.register(Carrinho,CarrinhoAdmin)
 admin.site.register(Cidade,CidadeAdmin)
 admin.site.register(Bairro,BairroAdmin)
 admin.site.register(Libera,LiberaAdmin)
