@@ -59,11 +59,11 @@ header#cabecalho h3#sub2{                    /** posicao sub titulo 2 **/
 
 div#logo_cabecalho img#icone{
     height: 40px;
-    width: 100px;                       /** largura **/
+    width: 160px;                       /** largura **/
     min-height: 80px;
-    border: 5px solid #DAA520;            /** borda e cor da borda **/
-    margin-left: -20px;
-
+    margin-left: -25px;
+    border: 2px solid #DAA520;            /** borda e cor da borda **/
+    border-radius: 15px 15px 15px 15px;  /** arredondamento da borda **/
   
 }
 
@@ -72,9 +72,10 @@ div#logo_cabecalho img#icone{
 div#logo_cabecalho2 img#icone2{
     height: 40px;
     min-height: 55px;
-    border: 4px solid #DAA520;            /** borda e cor da borda **/
-    width: 70px;                       /** largura **/
+    width: 75px;                       /** largura **/
     margin-left: -30px;
+    border: 2px solid #DAA520;            /** borda e cor da borda **/
+    border-radius: 15px 15px 15px 15px;  /** arredondamento da borda **/
 
 }
 

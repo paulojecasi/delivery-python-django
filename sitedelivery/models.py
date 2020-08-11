@@ -277,7 +277,7 @@ class Produto(models.Model):
         return self.bebida +  " " + self.tamanho + "  " + self.complemento
 
     class Meta:
-        ordering = ['bebida']
+        ordering = ['bebida','complemento']
         verbose_name = '1  Cadastro e manutenção de Produto'
         verbose_name_plural = '1  Cadastro e manutenção de Produtos'
 
