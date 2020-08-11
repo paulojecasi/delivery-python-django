@@ -16,8 +16,8 @@ from .models import(
 
 class ProdutoAdmin(admin.ModelAdmin):
     #fields = ('cidade', 'estado')                  #-campos p/ aparecer no cadastro
-    list_display = ('bebida','complemento','tamanho','site','valor')             # -campos p/ aparecer no cadastro
-    list_filter = ('bebida','site')               #-adc um filtro na tela
+    list_display = ('bebida','complemento','tamanho','site','valor','classificacao')             # -campos p/ aparecer no cadastro
+    list_filter = ('bebida','site','classificacao')               #-adc um filtro na tela
     search_fields = ('bebida','site')             #-cria um campo de busca
 
 class CidadeAdmin(admin.ModelAdmin):
