@@ -2,7 +2,6 @@ from django.contrib.auth.models import User
 from django.db import models
 from datetime import datetime
 
-
 class Cidade(models.Model):
     CIDADE_CHOICES = (
         ('TERESINA', 'TERESINA'),
@@ -324,9 +323,6 @@ class Carrinho(models.Model):
         choices=SITUACAO_CARRINHO_BEB
     )
 
-
-
-
 class Pedido(models.Model):
     TIPO_PEDIDO = (
         ('1', 'CONVENIENCIA'),
@@ -394,7 +390,6 @@ class Pedido(models.Model):
     class Meta:
         verbose_name = 'Pedido Realizado'
         verbose_name_plural = 'Pedidos Realizados'
-
 
 
 class Libera(models.Model):
