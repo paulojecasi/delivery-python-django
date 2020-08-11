@@ -247,10 +247,34 @@ class Produto(models.Model):
         ('SIM', 'SIM'),
         ('NAO', 'NAO')
     )
+    CLASSIFICACAO = (
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+        ('5', '5'),
+        ('6', '6'),
+        ('7', '7'),
+        ('8', '8'),
+        ('9', '9'),
+        ('10', '10'),
+        ('11', '11'),
+        ('12', '12'),
+        ('13', '13'),
+        ('14', '14'),
+        ('15', '15'),
+        ('16', '16'),
+        ('17', '17'),
+        ('18', '18'),
+
+    )
 
     site = models.CharField(max_length=3, verbose_name='Apresentar no site?',
                             default="SIM", choices=PARAOSITE,
                             help_text='Informe se o produto vai aparecer no site')
+    classificacao = models.CharField(max_length=3, verbose_name='Classificaçao no site?',
+                            help_text='Posição que o produto vai aparecer no site',
+                            choices=CLASSIFICACAO)
     bebida = models.CharField(max_length=100, verbose_name='Bebida', choices=BEBIDAS_CHOICES,
                               help_text='Selecione o produto')
     complemento = models.CharField(max_length=200, blank=True, null=True,
@@ -276,7 +300,7 @@ class Produto(models.Model):
         return self.bebida +  " " + self.tamanho + "  " + self.complemento
 
     class Meta:
-        ordering = ['bebida','complemento']
+        ordering = ['classificacao','bebida','complemento']
         verbose_name = '1  Cadastro e manutenção de Produto'
         verbose_name_plural = '1  Cadastro e manutenção de Produtos'
 
