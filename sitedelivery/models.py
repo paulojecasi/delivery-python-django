@@ -237,6 +237,7 @@ class Produto(models.Model):
         ('GARRAFA 890 ML', 'GARRAFA 890 ML'),
         ('GARRAFA 750 ML', 'GARRAFA 750 ML'),
         ('GARRAFA 400 ML', 'GARRAFA 400 ML'),
+        ('GARRAFA 550 ML', 'GARRAFA 550 ML'),
 
     )
 
